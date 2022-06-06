@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  background-color: powderblue
+}
+
+.center {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.skills:hover {
+  opacity: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0 0 2px #000;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.5);
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 5px solid black;
+  padding-right: .15em;
+  white-space: nowrap;
+  width: 0;
+  animation-delay: 60s;
+  animation:
+    typing 2s steps(14, end) forwards,
+    blink 1s 5s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: black }
+}
