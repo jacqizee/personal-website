@@ -31,7 +31,7 @@ const Navigation = (props) => {
   return (
     <Box sx={{ flexGrow: 1, maxHeight: '10vh' }}>
       <Slide appear={false} direction="down" in={!trigger}>
-        <AppBar color='transparent' sx={{ boxShadow: 1, backgroundColor: 'white' }} >
+        <AppBar color='transparent' sx={{ boxShadow: 0, bgcolor: 'secondary' }} >
           <Toolbar>
             {/* Logo/H1 */}
             <Typography variant='h6' component={Link} href={'#hero'} sx={{ flexGrow: 1 }}>
@@ -40,7 +40,7 @@ const Navigation = (props) => {
 
             {/* Row Menu on md or larger */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
-              {menu.map(item => <Button key={item} href={`#${item}`}>{item}</Button>)}
+              {menu.map(item => <Button sx={{ textTransform: 'none' }} key={item} href={`#${item}`}>{item}</Button>)}
             </Box>  
 
             {/* Drawer Menu on XS screens */}
@@ -58,7 +58,7 @@ const Navigation = (props) => {
                 onClose={toggleDrawer(false)}
               >
                 <Box sx={{ width: 350 }}>
-                  <List component={Link}>
+                  <List component={Link} color='primary' sx={{ textDecoration: 'none' }}>
                     {menu.map(item => {
                       return (
                         <ListItem key={item}>

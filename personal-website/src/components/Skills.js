@@ -1,32 +1,8 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-
-// Skill Logos
-import jsLogo from '../assets/skills/js.png'
-import reactLogo from '../assets/skills/react.png'
-import nodejsLogo from '../assets/skills/nodejs.png'
-import html5Logo from '../assets/skills/html-5.png'
-import css3Logo from '../assets/skills/css-3.png'
-import sassLogo from '../assets/skills/sass.png'
-import gitLogo from '../assets/skills/git.png'
-import githubLogo from '../assets/skills/github.png'
-import pythonLogo from '../assets/skills/python.png'
-import mongodbLogo from '../assets/skills/mongodb.png'
+import { skillLogos } from './helpers/icons'
 
 const Skills = () => {
-
-  const logos = [
-    { src: pythonLogo, name: 'Python' },
-    { src: jsLogo, name: 'JavaScript' },
-    { src: reactLogo, name: 'React' },
-    { src: nodejsLogo, name: 'NodeJS' },
-    { src: html5Logo, name: 'HTML 5' },
-    { src: css3Logo, name: 'CSS 3' },
-    { src: sassLogo, name: 'SASS' },
-    { src: mongodbLogo, name: 'MongoDB' },
-    { src: gitLogo, name: 'Git' },
-    { src: githubLogo, name: 'GitHub' },
-  ]
 
   return(
     <Box sx={{ boxShadow: 5, borderRadius: 10, p: 5 }}>
@@ -34,9 +10,9 @@ const Skills = () => {
           Skills and Technologies
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {logos.map(logo => {
+        {skillLogos.map(logo => {
           return (  
-            <Box 
+            <Box
               key={logo.name}
               sx={{ position: 'relative', display: 'flex',
               justifyContent: 'center', alignItems: 'center',
@@ -50,8 +26,8 @@ const Skills = () => {
               <Typography
                 variant='caption'
                 className={'skills'}
-                sx={{ opacity: '0%', position: 'absolute',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                sx={{ position: 'absolute',
+                  fontSize: 0, alignItems: 'center', justifyContent: 'center',
                   width: '100%', height: '100%', borderRadius: 2 }}>
                 {logo.name}
               </Typography>

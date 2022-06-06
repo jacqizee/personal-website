@@ -3,11 +3,11 @@ import Typography from '@mui/material/Typography'
 
 const Hero = () => {
   return(
-    <Box id='hero' className='centered' sx={{ height: '100vh' }}>
-      <Typography variant="h2" className="typed-out" sx={{ fontFamily: 'Inconsolata, arial'}}> 
+    <Box id='hero' sx={{ display: 'flex', height: '100vh', textAlign: 'center', flexDirection: 'column', justifyContent: 'center' }}>
+      <Typography variant="h2" className="h1-typed-out" color='primary'> 
         Jacqueline Zhou
       </Typography>
-      <Typography variant="h4" sx={{ color: 'white' }}>
+      <Typography variant="h4" color='primary.contrastText'>
         Software Engineer
       </Typography>
     </Box>
@@ -15,5 +15,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-// className="typed-out"
