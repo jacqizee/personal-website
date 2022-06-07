@@ -94,7 +94,7 @@ const Navigation = ({ mode, setMode}) => {
                 onClose={toggleDrawer(false)}
               >
                 <Box sx={{ width: 350 }}>
-                  <List component={Link} color='primary' sx={{ textDecoration: 'none' }}>
+                  <List color='primary' sx={{ textDecoration: 'none' }}>
                     {menu.map(item => {
                       return (
                         <ListItem key={item}>
