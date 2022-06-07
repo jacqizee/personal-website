@@ -3,10 +3,12 @@ export const theme = (mode) => ({
     mode, 
     ...( mode === 'light') ? {
       primary: {
-        main: '#4e342e',
+        main: '#5d4037',
+        contrastText: '#fff'
       },
       secondary: {
         main: '#039be5',
+        contrastText: '#000'
       },
       background: {
         default: '#fafafa',
@@ -15,9 +17,11 @@ export const theme = (mode) => ({
     } : {
       primary: {
         main: '#039be5',
+        contrastText: '#000'
       },
       secondary: {
         main: '#7b5e57',
+        contrastText: '#fff'
       },
       background: {
         default: '#303030',

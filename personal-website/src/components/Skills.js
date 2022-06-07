@@ -24,7 +24,6 @@ const Skills = () => {
                 alt={`${logo.name} icon`}
                 sx={{ width: '100%' }} />
               <Typography
-                variant='caption'
                 className={'skills'}
                 sx={{ position: 'absolute',
                   fontSize: 0, alignItems: 'center', justifyContent: 'center',

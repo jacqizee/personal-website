@@ -44,16 +44,18 @@ const Contact = () => {
 
   return(
     <Box id="contact" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 7 }}>
-      <Box sx={{ position: 'relative', right: '35%', top: 45, display: 'flex' }}>
-        <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 2 }}>
+      <Box sx={{ position: 'relative', right: '20%', top: 55, display: 'flex' }}>
+        <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 3 }}>
           <Typography variant="h4">
-            Contact
+            Get in Touch
+          </Typography>
+          <Typography variant="body1" sx={{ display: { xs: 'none', md: 'inline' }}} >
+            Interested in chatting? My inbox is open for you!
           </Typography>
         </Box>
       </Box>
       
-      <Paper component='form' onSubmit={handleSubmit} sx={{ width: '75%', m: 2, textAlign: 'center' }}>
-        <Typography variant='h5' sx={{ pt: 5 }}>Get in Touch</Typography>
+      <Paper component='form' onSubmit={handleSubmit} sx={{ width: '75%', m: 2, pt: 4, textAlign: 'center' }}>
         <Grid container spacing={1} sx={{ width: '100%', p: 5 }}>
           <Grid item xs={12} sm={6}>
             <TextField id='name' label='Name' name="name" variant='outlined' value={contactForm.name} onChange={handleChange} required fullWidth />
@@ -67,9 +69,9 @@ const Contact = () => {
           <Grid item xs={12}>
             <TextField id='message' label='Message' name='message' variant='outlined' value={contactForm.message} onChange={handleChange} required multiline rows={3} fullWidth />
           </Grid>
-          <Grid item xs={12} sx={{ textAlign: 'center' }}>
+          <Grid item xs={12}>
             { !emailSubmitted ?
-              <Button type='submit'><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Submit</Button> :
+              <Button type='submit' sx={{ mt: 1, mb: -1 }}><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Submit</Button> :
               ! emailError ? <Button type='submit' disabled><MarkEmailReadRounded fontSize='small' sx={{ mr: .5 }} />Sent!</Button> :
               <Button type='submit'><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Error</Button>
             }

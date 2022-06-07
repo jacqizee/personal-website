@@ -16,12 +16,12 @@ import { createTheme } from '@mui/material/styles'
 
 const App = () => {
 
-  // const [ mode, setMode ] = useState('dark')
+  const [ mode, setMode ] = useState('light')
 
   return (
-    <ThemeProvider theme={createTheme(theme('dark'))}>
+    <ThemeProvider theme={createTheme(theme(mode))}>
       <Box component="nav">
-        <Navigation />
+        <Navigation mode={mode} setMode={setMode} />
         <Links />
       </Box>
       <Box className="site-wrapper" component='main'>
