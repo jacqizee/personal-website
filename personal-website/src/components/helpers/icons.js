@@ -22,7 +22,7 @@ export const actionLogos = [
   { icon: <LinkedInIcon />, name: 'LinkedIn', link: 'https://www.linkedin.com/in/jacqueline-z/' },
   { icon: <InstagramIcon />, name: 'Instagram', link: 'https://www.instagram.com/jacqizee' },
   { icon: <PaletteIcon />, name: 'Art Instagram', link: 'https://www.instagram.com/jacqizart' },
-  { icon: <EmailOutlinedIcon />, name: 'Email', link: 'mailto:jhjzhou@gmail.com' },
+  { icon: <EmailOutlinedIcon />, name: 'Email', link: 'mailto:jacqizee.dev@gmail.com' },
 ]
 
 export const skillLogos = [

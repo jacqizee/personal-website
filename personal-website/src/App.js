@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Navigation from './components/Navigation'
 import Links from './components/Links'
@@ -7,7 +8,6 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
-import Box from '@mui/material/Box'
 
 import { theme } from './components/Theme'
 import { ThemeProvider } from '@mui/material/styles'
@@ -20,19 +20,21 @@ const App = () => {
 
   return (
     <ThemeProvider theme={createTheme(theme(mode))}>
-      <Box component="nav">
+      <BrowserRouter>
         <Navigation mode={mode} setMode={setMode} />
         <Links />
-      </Box>
-      <Box className="site-wrapper" component='main'>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', bgcolor: 'background.default' }}>
-          <Hero />
-          <About />
-          <Experience />
-          <Portfolio />
-          <Contact />
-        </Box>
-      </Box>
+        <Hero />
+        <About />
+        <Experience />
+        <Portfolio />
+        <Contact />
+        {/* <Routes>
+          <Route path='/#about' element={<About />} />
+          <Route path='/#experience' element={<Experience />} />
+          <Route path='/#portfolio' element={<Portfolio />} />
+          <Route path='/#contact' element={<Contact />} />
+        </Routes> */}
+      </BrowserRouter>
     </ThemeProvider>
   )
 }

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
+
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
 import Button from '@mui/material/Button'
 import Drawer from '@mui/material/Drawer'
 import List from '@mui/material/List'
@@ -59,13 +60,13 @@ const Navigation = ({ mode, setMode}) => {
         <AppBar color='transparent' sx={{ boxShadow: 0, bgcolor: 'secondary' }} >
           <Toolbar>
             {/* Logo/H1 */}
-            <Typography variant='h6' component={Link} href={'#hero'} sx={{ flexGrow: 1 }}>
+            <Typography variant='h6' component={HashLink} to={'#hero'} sx={{ flexGrow: 1 }}>
               JZ
             </Typography>
 
             {/* Row Menu on md or larger */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
-              {menu.map(item => <Button sx={{ textTransform: 'none' }} key={item} href={`#${item}`}>{item}</Button>)}
+              {menu.map(item => <HashLink smooth to={`#${item}`} key={item}><Button sx={{ textTransform: 'none' }}>{item}</Button></HashLink>)}
 
               {/* Light/Dark Mode */}
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -98,9 +99,11 @@ const Navigation = ({ mode, setMode}) => {
                     {menu.map(item => {
                       return (
                         <ListItem key={item}>
-                          <ListItemButton onClick={toggleDrawer(false)} href={`#${item}`}>
-                            <ListItemText primary={item}/>
-                          </ListItemButton>
+                          <HashLink smooth to={`#${item}`}>
+                            <ListItemButton onClick={toggleDrawer(false)}>
+                              <ListItemText primary={item}/>
+                            </ListItemButton>
+                          </HashLink>
                         </ListItem>
                       )
                     })}

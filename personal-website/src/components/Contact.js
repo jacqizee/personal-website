@@ -44,9 +44,9 @@ const Contact = () => {
 
   return(
     <Box id="contact" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 7 }}>
-      <Box sx={{ position: 'relative', right: '20%', top: 55, display: 'flex' }}>
+      <Box sx={{ position: 'relative', right: { md: '20%', lg: '25%' }, top: 55, display: 'flex' }}>
         <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 3 }}>
-          <Typography variant="h4">
+          <Typography variant={'h4'}>
             Get in Touch
           </Typography>
           <Typography variant="body1" sx={{ display: { xs: 'none', md: 'inline' }}} >
