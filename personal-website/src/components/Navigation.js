@@ -60,9 +60,11 @@ const Navigation = ({ mode, setMode}) => {
         <AppBar color='transparent' sx={{ boxShadow: 0, bgcolor: 'secondary' }} >
           <Toolbar>
             {/* Logo/H1 */}
-            <Typography variant='h6' component={HashLink} to={'#hero'} sx={{ flexGrow: 1 }}>
-              JZ
-            </Typography>
+            <Box sx={{ flexGrow: 1 }}>
+              <Typography variant='h6' component={HashLink} to={'#hero'} sx={{ color: 'primary.main' }}>
+                JZ
+              </Typography>
+            </Box>
 
             {/* Row Menu on md or larger */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }}}>

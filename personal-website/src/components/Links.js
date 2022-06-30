@@ -15,7 +15,7 @@ const Links = () => {
           target="_blank"
           rel="noopener"
           key={action.name}
-          sx={{ color: 'primary.contrastText', my: 1, mx: .5, border: '.5px inset primary.light', boxShadow: 3, bgcolor: 'primary.dark' }}
+          sx={{ color: 'white', my: 1, mx: .5, border: '.5px inset primary.light', boxShadow: 3, bgcolor: 'primary.dark' }}
         >
           {action.icon}
         </IconButton>

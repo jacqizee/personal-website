@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 import Navigation from './components/Navigation'
 import Links from './components/Links'
@@ -19,7 +19,7 @@ const App = () => {
   const [ mode, setMode ] = useState('light')
 
   return (
-    <ThemeProvider theme={createTheme(theme(mode))}>
+    <ThemeProvider theme={createTheme(theme(mode))} sx={{ bgcolor: 'red' }}>
       <BrowserRouter>
         <Navigation mode={mode} setMode={setMode} />
         <Links />
