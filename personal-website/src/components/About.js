@@ -5,9 +5,9 @@ import Typography from '@mui/material/Typography'
 
 import { flexCenterCol } from './styles/styles'
 
-
+// Styling for elements: 0 = Cards, 1 = Paragraphs, 2 = Headlines
 const aboutMeStyling = [
-  // 0 = Cards, 1 = Paragraphs, 2 = Headlines
+  // 0 - Cards
   {
     textAlign: 'left',
     width: { xs: '90%', md: '65%'},
@@ -20,10 +20,12 @@ const aboutMeStyling = [
     color: 'primary.contrastText',
     bgcolor: 'background.paper'
   },
+  // 1 - Paragraphs
   {
     mb: 1,
     textIndent: '25px',
   },
+  // 2 - Headlines
   {
     bgcolor: 'primary.main',
     color: 'white',
@@ -37,7 +39,7 @@ const aboutMeStyling = [
 
 const About = () => {
   return(
-    <Box id="about" sx={{ width: '100%', backgroundColor: 'background.default', textAlign: 'center', ...flexCenterCol }}>
+    <Box id="about" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol }}>
       
       {/* About Me */}
       {/* Headline */}
@@ -75,10 +77,10 @@ const About = () => {
         
         {/* Body */}
         <Box sx={ aboutMeStyling[0] }>
-          <Typography variant='body1' sx={{ mb: 1 }}>
+          <Typography variant='body1' sx={ aboutMeStyling[1] }>
             When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
           </Typography>
-          <Typography variant='body1' sx={{ mb: 1 }}>
+          <Typography variant='body1' sx={ aboutMeStyling[1] }>
             I also love to spend time in the kitchen baking breads 🍞 and cookies, and trying new recipes (have any favorites you'd like to share? 👀) inspired by the places I've travelled.
           </Typography>
         </Box>

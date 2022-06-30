@@ -52,7 +52,7 @@ const Contact = () => {
 
         {/* Headline */}
         <Typography variant={'h4'}>
-          Get in Touch ✉️
+          Get in Touch
         </Typography>
 
         {/* Subtitle */}

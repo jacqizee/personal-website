@@ -16,6 +16,12 @@ import gitLogo from '../../assets/skills/git.png'
 import githubLogo from '../../assets/skills/github.png'
 import pythonLogo from '../../assets/skills/python.png'
 import mongodbLogo from '../../assets/skills/mongodb.png'
+import djangoLogo from '../../assets/skills/django.jpeg'
+import insomniaLogo from '../../assets/skills/insomnia.png'
+import muiLogo from '../../assets/skills/mui.png'
+import postgresqlLogo from '../../assets/skills/postgresql.png'
+import tableplusLogo from '../../assets/skills/tableplus.png'
+import rLogo from '../../assets/skills/R.png'
 
 export const actionLogos = [
   { icon: <GitHubIcon />, name: 'GitHub', link: 'https://github.com/jacqizee/' },
@@ -36,4 +42,10 @@ export const skillLogos = [
   { src: mongodbLogo, name: 'MongoDB' },
   { src: gitLogo, name: 'Git' },
   { src: githubLogo, name: 'GitHub' },
+  { src: djangoLogo, name: 'Django' },
+  { src: insomniaLogo, name: 'Insomnia' },
+  { src: muiLogo, name: 'Material UI' },
+  { src: postgresqlLogo, name: 'PostgreSQL' },
+  { src: tableplusLogo, name: 'TablePlus' },
+  { src: rLogo, name: 'R' },
 ]
