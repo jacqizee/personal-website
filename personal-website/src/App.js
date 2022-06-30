@@ -5,6 +5,8 @@ import Navigation from './components/Navigation'
 import Links from './components/Links'
 import Hero from './components/Hero'
 import About from './components/About'
+import Interests from './components/Interests'
+import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
@@ -25,6 +27,8 @@ const App = () => {
         <Links />
         <Hero />
         <About />
+        <Interests />
+        <Skills />
         <Experience />
         <Portfolio />
         <Contact />

@@ -57,7 +57,7 @@ const Navigation = ({ mode, setMode}) => {
   return (
     <Box sx={{ flexGrow: 1, maxHeight: '10vh' }}>
       <Slide appear={false} direction="down" in={!trigger}>
-        <AppBar color='transparent' sx={{ boxShadow: 0, bgcolor: 'secondary' }} >
+        <AppBar sx={{ boxShadow: 0, bgcolor: 'rgba(3,155,229,0.5)' }} >
           <Toolbar>
             {/* Logo/H1 */}
             <Box sx={{ flexGrow: 1 }}>
@@ -68,7 +68,7 @@ const Navigation = ({ mode, setMode}) => {
 
             {/* Row Menu on md or larger */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
-              {menu.map(item => <HashLink smooth to={`#${item}`} key={item}><Button sx={{ textTransform: 'none' }}>{item}</Button></HashLink>)}
+              {menu.map(item => <Box component={HashLink} smooth to={`#${item}`} key={item} sx={{ textDecoration: 'none' }}><Button variant='text' sx={{ textTransform: 'none', color: 'secondary.contrastText', textShadow: '1px 1px 3px rgba(265,265,265,0.25)' }}>{item}</Button></Box>)}
 
               {/* Light/Dark Mode */}
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
