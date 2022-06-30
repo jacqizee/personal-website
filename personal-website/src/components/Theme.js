@@ -3,15 +3,17 @@ export const theme = (mode) => ({
     mode, 
     ...( mode === 'light') ? {
       primary: {
-        main: '#5d4037',
-        contrastText: '#fff'
+        // main: '#5d4037',
+        // contrastText: '#fff'
+        main: '#039be5',
+        contrastText: '#000'
       },
       secondary: {
         main: '#039be5',
         contrastText: '#000'
       },
       background: {
-        default: '#fafafa',
+        default: '#f9f9f9',
         paper: '#ffffff',
       },
     } : {

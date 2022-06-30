@@ -5,7 +5,7 @@ import { skillLogos } from './helpers/icons'
 const Skills = () => {
 
   return(
-    <Box sx={{ boxShadow: 2, borderRadius: 3, p: 5, mx: 3 }}>
+    <Box sx={{ boxShadow: 2, borderRadius: 3, p: 2, mx: 3 }}>
       <Typography variant="h6" sx={{ textAlign: 'center', pb: 3 }}>
           Skills and Technologies
       </Typography>

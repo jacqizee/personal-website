@@ -9,7 +9,8 @@ import { flexCenterCol } from './styles/styles'
 const aboutMeStyling = [
   {
     textAlign: 'left',
-    width: { xs: '80%', md: '50%'},
+    width: { xs: '90%', md: '65%'},
+    maxWidth: '1500px',
     borderRadius: 3,
     boxShadow: 2,
     px: 2,
@@ -26,15 +27,15 @@ const aboutMeStyling = [
 const About = () => {
   return(
     <Box id="about" sx={{ width: '100%', backgroundColor: 'background.default', textAlign: 'center', ...flexCenterCol }}>
+      
+      {/* About Me */}
       {/* Headline */}
       <Typography variant="h4" sx={{ bgcolor: 'primary.main', color: 'white', px: 3, py: 1, width: 'fit-content', boxShadow: '5px 5px 0 black', my: 3 }}>
         About Me
       </Typography>
 
+      {/* Body */}
       <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', mb: 6 }}>
-
-        {/* Greeting */}
-        
 
         {/* About Me */}
         <Box sx={ aboutMeStyling[0] }>
@@ -56,10 +57,12 @@ const About = () => {
         </Box>
 
         {/* Interests */}
+        {/* Headline */}
         <Typography variant="h4" sx={{ bgcolor: 'primary.main', color: 'white', px: 3, py: 1, width: 'fit-content', boxShadow: '5px 5px 0 black', my: 3 }}>
         Interests
-      </Typography>
+        </Typography>
         
+        {/* Body */}
         <Box sx={ aboutMeStyling }>
           <Typography variant='body1' sx={{ mb: 1 }}>
             When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
@@ -69,7 +72,10 @@ const About = () => {
           </Typography>
         </Box>
       </Box>
+
+      {/* Skills */}
       <Skills />
+
     </Box>
   )
 }

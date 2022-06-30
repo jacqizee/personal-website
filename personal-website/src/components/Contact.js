@@ -49,23 +49,33 @@ const Contact = () => {
   return(
     <Box id="contact" sx={{ ...flexCenterCol, pb: 7, bgcolor: 'background.default' }}>
       <Box sx={{ position: 'relative', right: { md: '20%', lg: '25%' }, top: 55, display: 'flex' }}>
+
         <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 3 }}>
+
+          {/* Headline */}
           <Typography variant={'h4'}>
             Get in Touch ✉️
           </Typography>
+
+          {/* Subtitle */}
           <Typography variant="body1" sx={{ display: { xs: 'none', md: 'inline' }}} >
             Interested in chatting? My inbox is open for you!
           </Typography>
+
         </Box>
       </Box>
       
-      <Paper component='form' onSubmit={handleSubmit} sx={{ width: '75%', m: 2, pt: 4, textAlign: 'center' }}>
+      <Paper component='form' onSubmit={handleSubmit} sx={{ width: '75%', maxWidth: '1500px', m: 2, pt: 4, textAlign: 'center' }}>
         <Grid container spacing={1} sx={{ width: '100%', p: 5 }}>
+
+          {/* Description */}
           <Grid item xs={12}>
             <Typography variant='body1' sx={{ mb: 2 }}>
               Prefer to contact me directly? Reach me at jacqizee.dev@gmail.com
             </Typography>
           </Grid>
+          
+          {/* Form */}
           <Grid item xs={12} sm={6}>
             <TextField id='name' label='Name' name="name" variant='outlined' value={contactForm.name} onChange={handleChange} required fullWidth />
           </Grid>
