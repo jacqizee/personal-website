@@ -5,22 +5,33 @@ import Typography from '@mui/material/Typography'
 
 import { flexCenterCol } from './styles/styles'
 
-// 0 = Cards, 1 = Paragraphs
+
 const aboutMeStyling = [
+  // 0 = Cards, 1 = Paragraphs, 2 = Headlines
   {
     textAlign: 'left',
     width: { xs: '90%', md: '65%'},
     maxWidth: '1500px',
     borderRadius: 3,
-    boxShadow: 2,
+    border: '1px dotted',
+    borderColor: 'primary.contrastText',
     px: 2,
     py: 3,
-    color: 'secondary.contrastText',
+    color: 'primary.contrastText',
     bgcolor: 'background.paper'
   },
   {
     mb: 1,
-    textIndent: '25px'
+    textIndent: '25px',
+  },
+  {
+    bgcolor: 'primary.main',
+    color: 'white',
+    px: 3,
+    py: 1,
+    width: 'fit-content',
+    borderRadius: 1,
+    my: 3
   }
 ]
 
@@ -30,7 +41,7 @@ const About = () => {
       
       {/* About Me */}
       {/* Headline */}
-      <Typography variant="h4" sx={{ bgcolor: 'primary.main', color: 'white', px: 3, py: 1, width: 'fit-content', boxShadow: '5px 5px 0 black', my: 3 }}>
+      <Typography variant="h4" sx={ aboutMeStyling[2] }>
         About Me
       </Typography>
 
@@ -39,7 +50,7 @@ const About = () => {
 
         {/* About Me */}
         <Box sx={ aboutMeStyling[0] }>
-          <Typography variant='h6' sx={{ mb: 1, color: 'secondary.contrastText', textAlign: 'center' }}>
+          <Typography variant='h6' sx={{ mb: 1, color: 'primary.contrastText', textAlign: 'center' }}>
             👋🏻 Hey There!
           </Typography>
           <Typography variant='body1' sx={ aboutMeStyling[1] }>
@@ -58,12 +69,12 @@ const About = () => {
 
         {/* Interests */}
         {/* Headline */}
-        <Typography variant="h4" sx={{ bgcolor: 'primary.main', color: 'white', px: 3, py: 1, width: 'fit-content', boxShadow: '5px 5px 0 black', my: 3 }}>
+        <Typography variant="h4" sx={ aboutMeStyling[2] }>
         Interests
         </Typography>
         
         {/* Body */}
-        <Box sx={ aboutMeStyling }>
+        <Box sx={ aboutMeStyling[0] }>
           <Typography variant='body1' sx={{ mb: 1 }}>
             When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
           </Typography>
