@@ -47,7 +47,7 @@ const Contact = () => {
       <Box sx={{ position: 'relative', right: { md: '20%', lg: '25%' }, top: 55, display: 'flex' }}>
         <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 3 }}>
           <Typography variant={'h4'}>
-            Get in Touch
+            Get in Touch ✉️
           </Typography>
           <Typography variant="body1" sx={{ display: { xs: 'none', md: 'inline' }}} >
             Interested in chatting? My inbox is open for you!
