@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+// Styles
 import { flexCenterCol } from './styles/styles' 
 
 // MUI
@@ -44,7 +45,6 @@ const Contact = () => {
       setEmailError(true)
     }
   }
-
 
   return(
     <Box id="contact" sx={{ ...flexCenterCol, pb: 7, bgcolor: 'background.default' }}>

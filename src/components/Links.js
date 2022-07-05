@@ -6,7 +6,7 @@ import { actionLogos } from './helpers/icons'
 const Links = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, bottom: 1,
-      position: 'fixed', zIndex: 'tooltip', ml: { xs: 1, sm: 3 }, mb: { xs: 1, sm: 3 } }}>
+      position: 'fixed', zIndex: 'tooltip', ml: { xs: .5, sm: 1 }, mb: { xs: .5, sm: 1.25 } }}>
       {actionLogos.map((action) => (
         <IconButton
           size='small'
@@ -15,7 +15,7 @@ const Links = () => {
           target="_blank"
           rel="noopener"
           key={action.name}
-          sx={{ color: 'white', my: 1, mx: .5, border: '.5px inset primary.light', boxShadow: 3, bgcolor: 'primary.dark', '&:hover': { bgcolor: 'primary.main', boxShadow: 5 } }}
+          sx={{ color: 'white', my: .5, mx: .5, border: '.5px inset primary.light', boxShadow: 3, bgcolor: 'primary.dark', '&:hover': { bgcolor: 'primary.main', boxShadow: 5 } }}
         >
           {action.icon}
         </IconButton>
