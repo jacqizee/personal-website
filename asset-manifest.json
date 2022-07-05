@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.830d2a63.css",
-    "main.js": "/personal-website/static/js/main.14c38937.js",
-    "static/media/R.png": "/personal-website/static/media/R.a05f0d1389387a91a676.png",
-    "static/media/postgresql.png": "/personal-website/static/media/postgresql.5a13e254fb0c5ae14652.png",
-    "static/media/python.png": "/personal-website/static/media/python.6a5cbc319ab3ddf8ef92.png",
-    "static/media/react.png": "/personal-website/static/media/react.86c8d9eba03e29814d2a.png",
-    "static/media/sass.png": "/personal-website/static/media/sass.c5da83bb9ff45b84e0e7.png",
-    "static/media/django.jpeg": "/personal-website/static/media/django.4c399895f677cd3bfbc8.jpeg",
-    "static/media/insomnia.png": "/personal-website/static/media/insomnia.b91bb866d870266cd8b7.png",
-    "static/media/tableplus.png": "/personal-website/static/media/tableplus.5f0a1cd52774acafc8b4.png",
-    "static/media/github.png": "/personal-website/static/media/github.05f6c17b8cd04c28456f.png",
-    "static/media/html-5.png": "/personal-website/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
-    "static/media/mui.png": "/personal-website/static/media/mui.ca66f0a99617ff6494c3.png",
-    "static/media/css-3.png": "/personal-website/static/media/css-3.4a6549b8c2b4cda8bb88.png",
-    "static/media/js.png": "/personal-website/static/media/js.3dfb665e058d08c99f28.png",
-    "static/media/mongodb.png": "/personal-website/static/media/mongodb.940824112db2f1788f28.png",
-    "index.html": "/personal-website/index.html",
-    "main.830d2a63.css.map": "/personal-website/static/css/main.830d2a63.css.map",
-    "main.14c38937.js.map": "/personal-website/static/js/main.14c38937.js.map"
+    "main.css": "/static/css/main.830d2a63.css",
+    "main.js": "/static/js/main.ce8ce432.js",
+    "static/media/R.png": "/static/media/R.a05f0d1389387a91a676.png",
+    "static/media/postgresql.png": "/static/media/postgresql.5a13e254fb0c5ae14652.png",
+    "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/react.png": "/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/sass.png": "/static/media/sass.c5da83bb9ff45b84e0e7.png",
+    "static/media/django.jpeg": "/static/media/django.4c399895f677cd3bfbc8.jpeg",
+    "static/media/insomnia.png": "/static/media/insomnia.b91bb866d870266cd8b7.png",
+    "static/media/tableplus.png": "/static/media/tableplus.5f0a1cd52774acafc8b4.png",
+    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
+    "static/media/html-5.png": "/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/mui.png": "/static/media/mui.ca66f0a99617ff6494c3.png",
+    "static/media/css-3.png": "/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/mongodb.png": "/static/media/mongodb.940824112db2f1788f28.png",
+    "index.html": "/index.html",
+    "main.830d2a63.css.map": "/static/css/main.830d2a63.css.map",
+    "main.ce8ce432.js.map": "/static/js/main.ce8ce432.js.map"
   },
   "entrypoints": [
     "static/css/main.830d2a63.css",
-    "static/js/main.14c38937.js"
+    "static/js/main.ce8ce432.js"
   ]
 }
