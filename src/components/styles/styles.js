@@ -12,7 +12,7 @@ export const flexCenterCol = {
 }
 
 // Styling for elements: 0 = Cards, 1 = Paragraphs, 2 = Headlines
-export const aboutMeStyling = [
+export const sharedStyling = [
   // 0 - Cards
   {
     width: { xs: '90%', md: '65%'},
