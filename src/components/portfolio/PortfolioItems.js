@@ -22,7 +22,7 @@ export const portfolioItems = [
     deployedLink: 'https://plant-pedia.herokuapp.com/',
     name: 'Plantpedia',
     description: 'App designed specifically for plants, allowing users to find and add information about their favorite house plants',
-    tech: []
+    tech: [ skillLogos[7], skillLogos[2], skillLogos[3], skillLogos[1], skillLogos[2], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
     image: recipeFinder,
@@ -30,7 +30,7 @@ export const portfolioItems = [
     deployedLink: 'https://find-din-recipes.netlify.app/',
     name: 'Recipe Finder',
     description: 'A web app that allows users to find new, exciting recipes by category and save them to their browser',
-    tech: []
+    tech: [ skillLogos[2], skillLogos[1], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
     image: tetris,

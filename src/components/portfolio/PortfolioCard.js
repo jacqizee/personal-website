@@ -52,7 +52,16 @@ const PortfolioInfo = ({ portfolioItem }) => {
     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: { md: -3, lg: -10 } }}>
 
         {/* Title */}
-        <Typography variant='h6' sx={{ position: 'relative', top: 25, left: 15, bgcolor: 'primary.dark', width: 'fit-content', color: 'white', py: 1, px: 3 }}>
+        <Typography variant='h6'
+          sx={{ position: 'relative',
+            top: 25,
+            left: 15,
+            bgcolor: 'primary.dark',
+            width: 'fit-content',
+            color: 'white',
+            py: 1,
+            px: 3 }}
+        >
           {portfolioItem.name}
         </Typography>
 
@@ -64,10 +73,22 @@ const PortfolioInfo = ({ portfolioItem }) => {
             </Typography>
           </Paper>
           <Box>
-            <IconButton size='small' component={Link} target="_blank" rel="noopener" href={portfolioItem.gitLink} sx={ iconStyling } >
+            <IconButton size='small'
+              component={Link}
+              target="_blank"
+              rel="noopener"
+              href={portfolioItem.gitLink}
+              sx={ iconStyling }
+            >
               <GitHubIcon />
             </IconButton>
-            <IconButton size='small' component={Link} target="_blank" rel="noopener" href={portfolioItem.deployedLink} sx={ iconStyling } >
+            <IconButton size='small'
+              component={Link}
+              target="_blank"
+              rel="noopener"
+              href={portfolioItem.deployedLink}
+              sx={ iconStyling }
+            >
               <InsertLinkRoundedIcon />
             </IconButton>
           </Box>
