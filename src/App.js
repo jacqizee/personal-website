@@ -8,13 +8,12 @@ import About from './components/About'
 import Interests from './components/Interests'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
-import Portfolio from './components/Portfolio'
+import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/Contact'
 
 import { theme } from './components/Theme'
 import { ThemeProvider } from '@mui/material/styles'
 import { createTheme } from '@mui/material/styles'
-
 
 const App = () => {
 
