@@ -22,7 +22,7 @@ export const portfolioItems = [
     deployedLink: 'https://plant-pedia.herokuapp.com/',
     name: 'Plantpedia',
     description: 'App designed specifically for plants, allowing users to find and add information about their favorite house plants',
-    tech: [ skillLogos[7], skillLogos[2], skillLogos[3], skillLogos[1], skillLogos[2], skillLogos[4], skillLogos[5], skillLogos[6] ]
+    tech: [ skillLogos[7], skillLogos[3], skillLogos[2], skillLogos[1], skillLogos[12], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
     image: recipeFinder,
