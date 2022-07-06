@@ -48,4 +48,5 @@ export const skillLogos = [
   { src: postgresqlLogo, name: 'PostgreSQL' },
   { src: tableplusLogo, name: 'TablePlus' },
   { src: rLogo, name: 'R' },
+  // toadd: Express, mongoose
 ]
