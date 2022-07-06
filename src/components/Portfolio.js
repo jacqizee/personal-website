@@ -32,7 +32,7 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       image: betterCred,
-      gitLink: 'link',
+      gitLink: 'https://github.com/jacqizee/BetterCred',
       deployedLink: '',
       name: 'BetterCred',
       description: '',
@@ -40,7 +40,7 @@ const Portfolio = () => {
     },
     {
       image: plantpedia,
-      gitLink: 'link',
+      gitLink: 'https://github.com/jacqizee/Plantpedia',
       deployedLink: '',
       name: 'Plantpedia',
       description: '',
@@ -48,7 +48,7 @@ const Portfolio = () => {
     },
     {
       image: recipeFinder,
-      gitLink: 'link',
+      gitLink: 'https://github.com/jacqizee/Recipe-Finder',
       deployedLink: '',
       name: 'Recipe Finder',
       description: '',
@@ -56,7 +56,7 @@ const Portfolio = () => {
     },
     {
       image: tetris,
-      gitLink: 'link',
+      gitLink: 'https://github.com/jacqizee/Lo-Fi-Tetris',
       deployedLink: '',
       name: 'Lo-Fi Tetris',
       description: 'A Tetris clone with a lo-fi themed twist! Built over the course of one week. Features include sound effects, persistent high score, and speed incrementation as you level up.',
