@@ -1,11 +1,17 @@
+// Styling
+import { flexCenterCol } from './styles/styles'
+
+// Logos
+import { skillLogos } from './helpers/icons'
+
+// MUI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import { skillLogos } from './helpers/icons'
 
 const Skills = () => {
 
   return(
-    <Box sx={{ bgcolor: 'background.default', p: 5 }}>
+    <Box sx={{ bgcolor: 'background.default', p: 5, ...flexCenterCol }}>
       <Typography variant="h4"
           sx={{ bgcolor: 'primary.main',
             color: 'white',

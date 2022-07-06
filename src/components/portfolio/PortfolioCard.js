@@ -4,19 +4,10 @@ import InsertLinkRoundedIcon from '@mui/icons-material/InsertLinkRounded'
 
 // MUI
 import Box from '@mui/material/Box'
-import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
 import Link from '@mui/material/Link'
 import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
-
-const iconStyling = {
-  bgcolor: 'primary.dark',
-  color: 'white',
-  borderRadius: '0 5px 5px 0',
-  my: .25,
-  '&:hover': { bgcolor: 'primary.main' }
-}
 
 export const PortfolioCardRight = ({ portfolioItem }) => {
   return (
@@ -72,11 +63,11 @@ const PortfolioInfo = ({ portfolioItem }) => {
       <Box sx={{ display: 'flex' }}>
 
         {/* Description */}
-        <Paper sx={{ height: 'fit-content', pt: 1.5 }}>
+        <Box sx={{ height: 'fit-content', pt: 1.5, border: '1px dotted', borderColor: 'primary.contrastText', color: 'primary.contrastText', borderRadius: 1, bgcolor: 'background.paper' }}>
           <Typography variant='body1' sx={{ py: 3, px: 5 }}>
             {portfolioItem.description}
           </Typography>
-        </Paper>
+        </Box>
 
         {/* Links */}
         <Box>
@@ -111,4 +102,12 @@ const PortfolioInfo = ({ portfolioItem }) => {
       </Box>
     </>
   )
+}
+
+const iconStyling = {
+  bgcolor: 'primary.darker',
+  color: 'white',
+  borderRadius: '0 5px 5px 0',
+  my: .25,
+  '&:hover': { bgcolor: 'primary.dark' },
 }

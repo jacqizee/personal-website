@@ -14,7 +14,7 @@ const Portfolio = () => {
   return(
     <Box id='portfolio' sx={{ ...flexCenterCol, backgroundColor: 'background.default' }}>
       {/* Headline */}
-      <Typography variant="h4" sx={ headlineStyling }>
+      <Typography variant="h4" sx={{ ...headlineStyling, mb: 5 }}>
         Portfolio
       </Typography>
 
