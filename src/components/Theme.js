@@ -3,7 +3,7 @@ export const theme = (mode) => ({
     mode, 
     ...( mode === 'light') ? {
       primary: {
-        main: '#039be5',
+        main: '#0090D8',
         contrastText: '#3D3D3D'
       },
       secondary: {

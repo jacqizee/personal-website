@@ -20,7 +20,7 @@ const iconStyling = {
 
 export const PortfolioCardRight = ({ portfolioItem }) => {
   return (
-    <Grid container sx={{ display: 'flex', alignItems: 'center', my: 3 }}>
+    <Grid container sx={{ display: 'flex', alignItems: 'center', my: 3.5 }}>
       <Image portfolioItem={portfolioItem} />
       <PortfolioInfo portfolioItem={portfolioItem} />
     </Grid>
@@ -29,7 +29,7 @@ export const PortfolioCardRight = ({ portfolioItem }) => {
 
 export const PortfolioCardLeft = ({ portfolioItem }) => {
   return (
-    <Grid container sx={{ display: 'flex', alignItems: 'center', my: 3 }}>
+    <Grid container sx={{ display: 'flex', alignItems: 'center', my: 3.5 }}>
       <PortfolioInfo portfolioItem={portfolioItem} />
       <Image portfolioItem={portfolioItem} />
     </Grid>
