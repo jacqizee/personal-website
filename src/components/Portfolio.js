@@ -2,65 +2,56 @@
 // Styling
 import { flexCenterCol, headlineStyling } from './styles/styles'
 
+// Components
+import { PortfolioCardRight, PortfolioCardLeft } from './helpers/PortfolioCard'
+
 // Images
 import tetris from '../assets/portfolio/Lofi-Tetris.png'
-import betterCred from '../assets/portfolio/BetterCred.gif'
-import plantpedia from '../assets/portfolio/Plantpedia.gif'
+import betterCred from '../assets/portfolio/BetterCred.png'
+import plantpedia from '../assets/portfolio/Plantpedia.png'
 import recipeFinder from '../assets/portfolio/RecipeFinder.gif'
 
 // Icons
-import GitHubIcon from '@mui/icons-material/GitHub'
-import InsertLinkRoundedIcon from '@mui/icons-material/InsertLinkRounded'
-import { skillLogos } from './styles/styles'
+import { skillLogos } from './helpers/icons'
 
 // MUI
 import Box from '@mui/material/Box'
-import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
-import IconButton from '@mui/material/IconButton'
 
-const iconStyling = {
-  bgcolor: 'primary.dark',
-  color: 'white',
-  borderRadius: '0 5px 5px 0',
-  my: .5,
-  '&:hover': { bgcolor: 'primary.main' }
-}
 
 const Portfolio = () => {
   const portfolioItems = [
     {
       image: betterCred,
       gitLink: 'https://github.com/jacqizee/BetterCred',
-      deployedLink: '',
+      deployedLink: 'https://bettercred.herokuapp.com/',
       name: 'BetterCred',
-      description: '',
-      tech: [],
+      description: 'Credit card directory that allow users to find and save credit cards that suit their lifestyle needs to a wallet',
+      tech: [ skillLogos[0], skillLogos[10], skillLogos[2], skillLogos[1], skillLogos[12], skillLogos[4], skillLogos[6] ],
     },
     {
       image: plantpedia,
       gitLink: 'https://github.com/jacqizee/Plantpedia',
-      deployedLink: '',
+      deployedLink: 'https://plant-pedia.herokuapp.com/',
       name: 'Plantpedia',
-      description: '',
+      description: 'App designed specifically for plants, allowing users to find and add information about their favorite house plants',
       tech: []
     },
     {
       image: recipeFinder,
       gitLink: 'https://github.com/jacqizee/Recipe-Finder',
-      deployedLink: '',
+      deployedLink: 'https://find-din-recipes.netlify.app/',
       name: 'Recipe Finder',
-      description: '',
+      description: 'A web app that allows users to find new, exciting recipes by category and save them to their browser',
       tech: []
     },
     {
       image: tetris,
       gitLink: 'https://github.com/jacqizee/Lo-Fi-Tetris',
-      deployedLink: '',
+      deployedLink: 'https://jacqizee.github.io/Lo-Fi-Tetris/',
       name: 'Lo-Fi Tetris',
       description: 'A Tetris clone with a lo-fi themed twist! Built over the course of one week. Features include sound effects, persistent high score, and speed incrementation as you level up.',
-      tech: []
+      tech: [ skillLogos[1], skillLogos[4], skillLogos[5] ]
     },
   ]
 
@@ -71,29 +62,14 @@ const Portfolio = () => {
         Portfolio
       </Typography>
 
-      {/* Tetris */}
-      <Box sx={{ display: 'flex', m: 10 }}>
-        <Box component='img' src={portfolioItems[3].image} alt={`Preview of ${portfolioItems[3].name}`} sx={{ width: '45%' }} />
-        <Box>
-          <IconButton size='small' component={Link} target="_blank" rel="noopener" href='jacqizee.me' sx={ iconStyling } >
-            <GitHubIcon />
-          </IconButton>
-          <IconButton size='small' component={Link} target="_blank" rel="noopener" href='jacqizee.me' sx={ iconStyling } >
-            <InsertLinkRoundedIcon />
-          </IconButton>
-        </Box>
-        <Box sx={{ ml: 8 }}>
-          <Typography variant='h6' sx={{ position: 'relative', top: 25, right: 25, bgcolor: 'primary.dark', width: 'fit-content', color: 'white', py: 1, px: 3 }}>
-            {portfolioItems[3].name}
-          </Typography>
-          <Paper sx={{ height: 'fit-content', pt: 1.5 }}>
-            <Typography variant='body1' sx={{ py: 3, px: 5 }}>
-              {portfolioItems[3].description}
-            </Typography>
+      <PortfolioCardRight portfolioItem={portfolioItems[0]} />
+      
+      <PortfolioCardLeft portfolioItem={portfolioItems[1]} />
+      
+      <PortfolioCardRight portfolioItem={portfolioItems[2]} />
 
-          </Paper>
-        </Box>
-      </Box>
+      <PortfolioCardLeft portfolioItem={portfolioItems[3]} />
+
     </Box>
   )
 }
