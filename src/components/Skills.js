@@ -1,5 +1,5 @@
 // Styling
-import { headlineStyling, flexCenterCol, sectionStyling } from './styles/styles'
+import { headlineStyling, sectionStyling } from './styles/styles'
 
 // Logos
 import { skillLogos } from './helpers/icons'

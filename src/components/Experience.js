@@ -1,6 +1,6 @@
 
 // Styling
-import { sectionStyling, flexCenterCol, headlineStyling } from './styles/styles'
+import { sectionStyling, headlineStyling } from './styles/styles'
 
 // MUI
 import Box from '@mui/material/Box'
