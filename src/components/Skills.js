@@ -1,5 +1,5 @@
 // Styling
-import { headlineStyling, sectionStyling } from './styles/styles'
+import { headlineStyling, sectionStyling, cardStyling } from './styles/styles'
 
 // Logos
 import { skillLogos } from './helpers/icons'
@@ -17,7 +17,7 @@ const Skills = () => {
           Skills
       </Typography>
         
-      <Box sx={{ bgcolor: 'background.paper', boxShadow: 2, borderRadius: 3, p: 2, mx: { xs: 0, md: 3 }, display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', ...cardStyling, width: '85%' }}>
         {skillLogos.map(logo => {
           return (  
             <Box

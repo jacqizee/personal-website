@@ -19,7 +19,7 @@ const About = () => {
       </Typography>
 
       {/* Body */}
-      <Box sx={{ ...cardStyling, ...flexCenterCol, textAlign: 'center' }}>
+      <Box sx={{ ...cardStyling, ...flexCenterCol, textAlign: 'center', width: { xs: '90%', md: '75%'}, }}>
         <Typography variant='h6' sx={{ mb: 1, color: 'primary.contrastText' }}>
           👋🏻 Hey There!
         </Typography>

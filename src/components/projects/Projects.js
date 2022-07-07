@@ -12,14 +12,14 @@ import Typography from '@mui/material/Typography'
 
 const Projects = () => {
   return(
-    <Box id='projects' sx={{ ...sectionStyling }}>
+    <Box id='projects' sx={{ ...sectionStyling, pb: 1 }}>
       {/* Headline */}
-      <Typography variant="h4" sx={{ ...headlineStyling, mb: 5 }}>
+      <Typography variant="h4" sx={{ ...headlineStyling }}>
         Projects
       </Typography>
 
       <ProjectCardRight projectItems={projectItems[0]} />
-      
+
       <ProjectCardLeft projectItems={projectItems[1]} />
       
       <ProjectCardRight projectItems={projectItems[2]} />
