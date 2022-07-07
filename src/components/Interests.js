@@ -7,7 +7,7 @@ import { flexCenterCol, paragraphStyling, headlineStyling, cardStyling } from '.
 
 const Interests = () => {
   return (
-    <Box id="interests" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol }}>
+    <Box id="interests" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol, mt: -1 }}>
       {/* Interests */}
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>

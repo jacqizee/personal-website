@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography'
 const Skills = () => {
 
   return(
-    <Box sx={{ bgcolor: 'background.default', pb: 3, px: 5, ...flexCenterCol }}>
+    <Box sx={{ bgcolor: 'background.default', pb: 3, px: 5, ...flexCenterCol, mt: -1 }}>
       <Typography variant="h4"
           sx={ headlineStyling }>
           Skills
