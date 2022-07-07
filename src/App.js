@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
 import Navigation from './components/Navigation'
-import Links from './components/Links'
 import Hero from './components/Hero'
 import About from './components/About'
 import Interests from './components/Interests'
@@ -23,7 +22,6 @@ const App = () => {
     <ThemeProvider theme={createTheme(theme(mode))}>
       <BrowserRouter>
         <Navigation mode={mode} setMode={setMode} />
-        <Links />
         <Hero />
         <About />
         <Interests />

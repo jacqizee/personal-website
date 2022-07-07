@@ -57,7 +57,7 @@ const Navigation = ({ mode, setMode}) => {
   return (
     <Box sx={{ flexGrow: 1, maxHeight: '10vh' }}>
       <Slide appear={false} direction="down" in={!trigger}>
-        <AppBar sx={{ boxShadow: 0, bgcolor: 'rgba(3,155,229,0.5)' }} >
+        <AppBar sx={{ boxShadow: 0, bgcolor: 'rgba(3,155,229,0.15)' }} >
           <Toolbar>
             {/* Logo/H1 */}
             <Box sx={{ flexGrow: 1 }}>
