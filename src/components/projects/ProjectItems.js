@@ -29,7 +29,7 @@ export const projectItems = [
     gitLink: 'https://github.com/jacqizee/Recipe-Finder',
     deployedLink: 'https://find-din-recipes.netlify.app/',
     name: 'Recipe Finder',
-    description: 'A 2-person one day hackathon project in which we built a web app that consumes a public API (TheMealDB). Displayed the returned data in a way that allows users to search and find new, exciting recipes by either category or region, then save their favorites finds to their browser.',
+    description: 'A 2-person one day hackathon project. We built an app that consumes a public API (TheMealDB), allowing users to search and find new, exciting recipes by either category or region. Users can also save favorites recipes to their browser.',
     tech: [ skillLogos[2], skillLogos[1], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
