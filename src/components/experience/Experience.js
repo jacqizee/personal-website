@@ -23,7 +23,7 @@ const Experience = () => {
     return (
       <div hidden={ value !== index }>
         {value === index && (
-          <Box sx={{ my: 1, mx: 3 }}>
+          <Box sx={{ my: { xs: 0, md: 1 }, ml: { xs: 2, md: 3} }}>
             {children}
           </Box>
         )}
@@ -59,13 +59,12 @@ const Experience = () => {
           { experienceItems.map((item, index) => {
             return (
               <TabPanel value={currentTab} index={index} key={index}>
-                <Typography variant='subtitle1' sx={{ color: 'primary.main', display: 'inline' }}>{item.title}</Typography>
-                <Typography variant='subtitle1' sx={{  color: 'primary.main', display: 'inline' }}> @ {item.company}</Typography>
-                <Typography variant='subtitle2'>{item.dates}</Typography>
+                <Typography variant='subtitle1' sx={{ color: 'primary.main', display: 'inline', lineHeight: 1}}>{item.title} @ {item.company}</Typography>
+                <Typography variant='subtitle2' sx={{ mt: .75 }}>{item.dates}</Typography>
                 {item.points.map((point, index) => (
-                  <Box key={index} sx={{ mt: .5, ml: 2, display: 'flex' }}>
-                    <Box sx={{ mr: 3 }}>▹</Box>
-                    <Typography variant='body1'>{point}</Typography>
+                  <Box key={index} sx={{ mt: .5, ml: { xs: 0, md: 2}, display: 'flex' }}>
+                    <Box sx={{ mr: { xs: 1.5, md: 3}, mt: .25 }}>▹</Box>
+                    <Typography variant='body1' sx={{ lineHeight: { xs: 1.35, md: 1.5 } }}>{point}</Typography>
                   </Box>
                 ))}
               </TabPanel>
