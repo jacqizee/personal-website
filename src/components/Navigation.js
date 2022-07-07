@@ -22,7 +22,7 @@ import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded'
 
 const Navigation = ({ mode, setMode}) => {
 
-  const menu = ['about', 'projects', 'experience', 'contact']
+  const menu = ['about', 'projects', 'experience', 'interests', 'contact']
   const [ drawerOpen, setDrawerOpen ] = useState(false)
   const [ switchStatus, setSwitchStatus ] = useState(false)
 

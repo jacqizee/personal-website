@@ -14,7 +14,7 @@ const Projects = () => {
   return(
     <Box id='projects' sx={{ ...sectionStyling }}>
       {/* Headline */}
-      <Typography variant="h4" sx={{ ...headlineStyling, borderTop: 'double', mb: 0, width: '100vw', textAlign: 'center' }}>
+      <Typography variant="h4" sx={{ ...headlineStyling, mb: 0, width: '100%', textAlign: 'center', border: 'none' }}>
         Projects
       </Typography>
 

@@ -12,7 +12,7 @@ const Skills = () => {
 
   return(
     <Box sx={{ ...sectionStyling, pt: 0 }}>
-      <Typography variant="h5" sx={{ color: 'secondary.contrastText', mb: 1 }}>
+      <Typography variant="h6" sx={{ color: 'secondary.contrastText', mb: 1 }}>
           Skills & Technologies
       </Typography>
         
