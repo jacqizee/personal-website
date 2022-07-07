@@ -10,40 +10,41 @@ import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
 import Tooltip from '@mui/material/Tooltip'
 
-export const PortfolioCardRight = ({ portfolioItem }) => {
+export const ProjectCardRight = ({ projectItem }) => {
   return (
     <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: 2 } }}>
-      <PortfolioImage portfolioItem={portfolioItem} />
+      <ProjectImage projectItem={projectItem} />
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: { md: -3, lg: -10 }, pr: { xs: 3, md: 6 }, pl: { xs: 6, md: 3 } }}>
-        <PortfolioInfo portfolioItem={portfolioItem} />
+        <ProjectInfo projectItem={projectItem} />
       </Grid>
     </Grid>
   )
 }
 
-export const PortfolioCardLeft = ({ portfolioItem }) => {
+export const ProjectCardLeft = ({ projectItem }) => {
   return (
     <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: 2 } }}>
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: { md: -3, lg: -10 }, pl: { xs: 6, md: 8 }, pr: { xs: 3, md: 0 } }}>
-        <PortfolioInfo portfolioItem={portfolioItem} />
+        <ProjectInfo projectItem={projectItem} />
       </Grid>
-      <PortfolioImage portfolioItem={portfolioItem} />
+      <ProjectImage projectItem={projectItem} />
     </Grid>
   )
 }
 
-const PortfolioImage = ({ portfolioItem }) => {
+const ProjectImage = ({ projectItem }) => {
   return (
-    <Grid item md={6} sx={{ textAlign: 'center', display: { xs: 'none', md: 'inline' } }}>
+    <Grid item component={Link} href={projectItem.deployedLink} target="__blank__"
+    md={6} sx={{ textAlign: 'center', display: { xs: 'none', md: 'inline' } }}>
       <Box component='img'
-        src={portfolioItem.image}
-        alt={`Preview of ${portfolioItem.name}`}
+        src={projectItem.image}
+        alt={`Preview of ${projectItem.name}`}
         sx={{ width: '85%', boxShadow: 2, borderRadius: 2 }} />
     </Grid>
   )
 }
 
-const PortfolioInfo = ({ portfolioItem }) => {
+const ProjectInfo = ({ projectItem }) => {
   return (
     <>
       {/* Title */}
@@ -57,7 +58,7 @@ const PortfolioInfo = ({ portfolioItem }) => {
           py: 1,
           px: 3 }}
       >
-        {portfolioItem.name}
+        {projectItem.name}
       </Typography>
 
       {/* Info */}
@@ -66,7 +67,7 @@ const PortfolioInfo = ({ portfolioItem }) => {
         {/* Description */}
         <Box sx={{ height: 'fit-content', pt: 1.5, border: '1px dotted', borderColor: 'primary.contrastText', color: 'primary.contrastText', borderRadius: 1, bgcolor: 'background.paper' }}>
           <Typography variant='body1' sx={{ py: 3, px: 5 }}>
-            {portfolioItem.description}
+            {projectItem.description}
           </Typography>
         </Box>
 
@@ -77,7 +78,7 @@ const PortfolioInfo = ({ portfolioItem }) => {
             component={Link}
             target="_blank"
             rel="noopener"
-            href={portfolioItem.gitLink}
+            href={projectItem.gitLink}
             sx={ iconStyling }
           >
             <GitHubIcon />
@@ -88,7 +89,7 @@ const PortfolioInfo = ({ portfolioItem }) => {
             component={Link}
             target="_blank"
             rel="noopener"
-            href={portfolioItem.deployedLink}
+            href={projectItem.deployedLink}
             sx={ iconStyling }
           >
             <InsertLinkRoundedIcon />
@@ -99,7 +100,7 @@ const PortfolioInfo = ({ portfolioItem }) => {
 
       {/* Skill Logos */}
       <Box sx={{ m: 1, mt: 1.5 }}>
-        {portfolioItem.tech.map(logo => {
+        {projectItem.tech.map(logo => {
           return (
             <Tooltip title={logo.name} placement="bottom">
               <Box component='img' key={logo.name} src={logo.src} alt={logo.name} sx={{ height: '1.5rem', mx: .75 }} />

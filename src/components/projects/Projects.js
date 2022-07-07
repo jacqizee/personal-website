@@ -3,8 +3,8 @@
 import { flexCenterCol, headlineStyling } from '../styles/styles'
 
 // Components
-import { PortfolioCardRight, PortfolioCardLeft } from './ProjectCard'
-import { portfolioItems } from './ProjectItems'
+import { ProjectCardRight, ProjectCardLeft } from './ProjectCard'
+import { projectItems } from './ProjectItems'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -18,13 +18,13 @@ const Projects = () => {
         Projects
       </Typography>
 
-      <PortfolioCardRight portfolioItem={portfolioItems[0]} />
+      <ProjectCardRight portfolioItem={projectItems[0]} />
       
-      <PortfolioCardLeft portfolioItem={portfolioItems[1]} />
+      <ProjectCardLeft portfolioItem={projectItems[1]} />
       
-      <PortfolioCardRight portfolioItem={portfolioItems[2]} />
+      <ProjectCardRight portfolioItem={projectItems[2]} />
 
-      <PortfolioCardLeft portfolioItem={portfolioItems[3]} />
+      <ProjectCardLeft portfolioItem={projectItems[3]} />
 
     </Box>
   )

@@ -7,7 +7,7 @@ import recipeFinder from '../../assets/portfolio/RecipeFinder.png'
 // Icons
 import { skillLogos } from '../helpers/icons'
 
-export const portfolioItems = [
+export const projectItems = [
   {
     image: betterCred,
     gitLink: 'https://github.com/jacqizee/BetterCred',
