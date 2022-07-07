@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
+import Links from './Links'
+
 import { flexCenterCol } from './styles/styles.js'
 
 const Hero = () => {
@@ -12,6 +14,7 @@ const Hero = () => {
       <Typography variant="h4" color='primary.main' sx={{ fontWeight: 300 }}>
         Software Engineer
       </Typography>
+      <Links />
     </Box>
   )
 }

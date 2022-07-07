@@ -35,10 +35,12 @@ const About = () => {
         <Typography variant='body1' sx={ paragraphStyling }>
           I love the creative and rewarding nature of coding and am excited to challenge myself 💪🏻 by creating and working on projects I can be proud of!
         </Typography>
-
-        <Button component={Link} href={resume} variant='contained' target='__blank__' sx={{ mt: 1, color: 'white', boxShadow: 0 }}>Resume</Button>
-      </Box>
       
+        {/* Resume */}
+        <Button component={Link} href={resume} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0 }}>Resume</Button>
+      
+      </Box>
+
     </Box>
   )
 }

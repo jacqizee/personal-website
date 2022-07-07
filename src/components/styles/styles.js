@@ -15,8 +15,8 @@ export const sectionStyling = {
   ...flexCenterCol,
   width: '100%',
   mt: -1,
-  pt: 6,
-  pb: 9,
+  pt: 3,
+  pb: 6,
   bgcolor: 'background.default'
 }
 

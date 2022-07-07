@@ -34,7 +34,7 @@ export const theme = (mode) => ({
     }
   },
   typography: {
-    fontFamily: 'Inconsolata, Arial',
+    fontFamily: 'Quicksand, Arial',
     h1: {
       fontSize: '4.5rem',
     },
@@ -52,6 +52,7 @@ export const theme = (mode) => ({
     },
     h6: {
       fontSize: '1.6rem',
+      fontWeight: 500,
     },
     subtitle1: {
       fontSize: '1.3rem'
@@ -60,7 +61,8 @@ export const theme = (mode) => ({
       fontSize: '1.1rem'
     },
     body1: {
-      fontSize: '0.98rem'
+      fontSize: '0.98rem',
+      fontWeight: 400,
     },
     body2: {
       fontSize: '0.9rem'
