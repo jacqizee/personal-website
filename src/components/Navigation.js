@@ -97,15 +97,15 @@ const Navigation = ({ mode, setMode}) => {
                 onClose={toggleDrawer(false)}
               >
                 <Box sx={{ width: 350 }}>
-                  <List color='primary' sx={{ textDecoration: 'none' }}>
+                  <List color='primary'>
                     {menu.map(item => {
                       return (
                         <ListItem key={item}>
-                          <HashLink smooth to={`#${item}`}>
+                          <Box component={HashLink} smooth to={`#${item}`} sx={{ textDecoration: 'none', color: 'primary.contrastText' }}>
                             <ListItemButton onClick={toggleDrawer(false)}>
-                              <ListItemText primary={item}/>
+                              <ListItemText primary={item} />
                             </ListItemButton>
-                          </HashLink>
+                          </Box>
                         </ListItem>
                       )
                     })}
