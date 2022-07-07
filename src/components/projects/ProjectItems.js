@@ -13,7 +13,7 @@ export const projectItems = [
     gitLink: 'https://github.com/jacqizee/BetterCred',
     deployedLink: 'https://bettercred.herokuapp.com/',
     name: 'BetterCred',
-    description: 'Credit card directory that allow users to find and save credit cards that suit their lifestyle needs to a wallet',
+    description: 'Full-stack web application that allow users to find and save credit cards that suit their lifestyle needs to a digital wallet. Designed a PostgreSQL DB that is consumed by a RESTful API.',
     tech: [ skillLogos[0], skillLogos[10], skillLogos[2], skillLogos[1], skillLogos[12], skillLogos[4], skillLogos[6] ],
   },
   {
@@ -21,7 +21,7 @@ export const projectItems = [
     gitLink: 'https://github.com/jacqizee/Plantpedia',
     deployedLink: 'https://plant-pedia.herokuapp.com/',
     name: 'Plantpedia',
-    description: 'App designed specifically for plants, allowing users to find and add information about their favorite house plants',
+    description: 'Working in a 3-person group to design and build an app for a plant directory of sorts, allowing users to find and add information about their favorite house plants. Created using the MERN stack, with a CRUD API that consumes a MongoDB database.',
     tech: [ skillLogos[7], skillLogos[3], skillLogos[2], skillLogos[1], skillLogos[12], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
@@ -29,7 +29,7 @@ export const projectItems = [
     gitLink: 'https://github.com/jacqizee/Recipe-Finder',
     deployedLink: 'https://find-din-recipes.netlify.app/',
     name: 'Recipe Finder',
-    description: 'A web app that allows users to find new, exciting recipes by category and save them to their browser',
+    description: 'A 2-person one day hackathon project in which we built a web app that consumes a public API (TheMealDB). Displayed the returned data in a way that allows users to search and find new, exciting recipes by either category or region, then save their favorites finds to their browser.',
     tech: [ skillLogos[2], skillLogos[1], skillLogos[4], skillLogos[5], skillLogos[6] ]
   },
   {
