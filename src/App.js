@@ -7,7 +7,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Interests from './components/Interests'
 import Skills from './components/Skills'
-import Experience from './components/Experience'
+import Experience from './components/experience/Experience'
 import Projects from './components/projects/Projects'
 import Contact from './components/Contact'
 
@@ -26,10 +26,10 @@ const App = () => {
         <Links />
         <Hero />
         <About />
-        <Interests />
         <Skills />
         <Projects />
         <Experience />
+        <Interests />
         <Contact />
       </BrowserRouter>
     </ThemeProvider>

@@ -11,7 +11,7 @@ import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling, sectionS
 
 const About = () => {
   return(
-    <Box id="about" sx={{ ...sectionStyling, bgcolor: 'background.defaultDarker' }}>
+    <Box id="about" sx={{ ...sectionStyling }}>
       
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
