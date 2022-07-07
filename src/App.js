@@ -24,10 +24,10 @@ const App = () => {
         <Navigation mode={mode} setMode={setMode} />
         <Hero />
         <About />
-        <Interests />
         <Skills />
         <Projects />
         <Experience />
+        <Interests />
         <Contact />
       </BrowserRouter>
     </ThemeProvider>

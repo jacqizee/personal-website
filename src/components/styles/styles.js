@@ -21,7 +21,7 @@ export const sectionStyling = {
 }
 
 export const cardStyling = {
-  width: { xs: '90%', md: '65%'},
+  width: { xs: '90%', md: '75%'},
   maxWidth: '1500px',
   borderRadius: 3,
   border: '1px dotted',
@@ -39,11 +39,9 @@ export const paragraphStyling = {
 }
 
 export const headlineStyling = {
-  bgcolor: 'primary.main',
-  color: 'white',
-  px: 3,
+  color: 'primary.light',
+  borderBottom: 'double',
   py: 1,
   width: 'fit-content',
-  borderRadius: 1,
   my: 3
 }

@@ -1,5 +1,15 @@
 export const experienceItems = [
   {
+    title: 'Software Engineering Immersive',
+    company: 'General Assembly',
+    dates: 'March 2022 -  June 2022',
+    points: [
+      '500+ hours of applied learning and development across both front-end and back-end development, with daily standups, workshops, and homework, culminating in 4 projects',
+      'Building skills and familiarity in HTML5, CSS3, JavaScript ES6, the MERN stack (MongoDB, Express.js, React, Node.js), Python, Django, PostgreSQL, and other web development frameworks',
+      'Applying learnings to create both individual projects and projects and across teams of 2-4 individuals'
+    ]
+  },
+  {
     title: 'PPC Account Manager',
     company: 'Search Laboratory',
     dates: 'Apr 2021 -  Mar 2022',

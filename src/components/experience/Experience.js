@@ -36,7 +36,7 @@ const Experience = () => {
 
       {/* Headline */}
       <Box sx={{ ml: { xs: '15%', md: '25%'}, textAlign: 'left', width: '100%', mb: 1 }}>
-        <Typography variant="h4" sx={{ color: 'primary.dark', fontWeight: 'light' }}>
+        <Typography variant="h4" sx={{ color: 'primary.light', fontWeight: 'light' }}>
           Experience
         </Typography>
       </Box>
@@ -49,7 +49,8 @@ const Experience = () => {
           value={currentTab}
           variant="scrollable"
           onClick={handleTabChange}
-          sx={{ borderRight: 1, borderColor: 'divider', width: 'fit-content' }}
+          textColor='secondary'
+          sx={{ borderRight: 1, borderColor: 'divider', width: 'fit-content', color: 'primary.dark' }}
         >
           { experienceItems.map((item, index) => <Tab label={item.title} id={index} key={index} />)}
         </Tabs>

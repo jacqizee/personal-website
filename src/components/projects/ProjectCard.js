@@ -12,7 +12,7 @@ import Tooltip from '@mui/material/Tooltip'
 
 export const ProjectCardRight = ({ projectItems }) => {
   return (
-    <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: .15 }, bgcolor: 'rgba(0,144,216,0.10)', py: 5 }}>
+    <Grid container sx={{ display: 'flex', alignItems: 'center', bgcolor: 'rgba(0,144,216,0.10)', py: 5, boxShadow: 1 }}>
       <ProjectImage projectItems={projectItems} />
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: -2, pr: { xs: 3, md: 6 }, pl: { xs: 6, md: 3 } }}>
         <ProjectInfo projectItems={projectItems} />
@@ -23,7 +23,7 @@ export const ProjectCardRight = ({ projectItems }) => {
 
 export const ProjectCardLeft = ({ projectItems }) => {
   return (
-    <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: .15 }, bgcolor: 'rgba(0,144,216,0.30)', py: 5 }}>
+    <Grid container sx={{ display: 'flex', alignItems: 'center', bgcolor: 'rgba(0,144,216,0.30)', py: 5, boxShadow: 1 }}>
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: -3, pl: { xs: 6, md: 8 }, pr: { xs: 3, md: 0 } }}>
         <ProjectInfo projectItems={projectItems} />
       </Grid>
