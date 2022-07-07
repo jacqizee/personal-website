@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d5df0d07.css",
-    "main.js": "/static/js/main.cf1a76e3.js",
+    "main.js": "/static/js/main.a731e8d5.js",
     "static/media/Plantpedia.png": "/static/media/Plantpedia.aafce49e96010a981abc.png",
     "static/media/Lofi-Tetris.png": "/static/media/Lofi-Tetris.2ef85684c39a671d7a27.png",
     "static/media/BetterCred.png": "/static/media/BetterCred.64e5ba6774a898930d62.png",
     "static/media/R.png": "/static/media/R.a05f0d1389387a91a676.png",
     "static/media/postgresql.png": "/static/media/postgresql.5a13e254fb0c5ae14652.png",
     "static/media/RecipeFinder.png": "/static/media/RecipeFinder.8d7858157aa2ebc75a3d.png",
+    "static/media/Jacqueline_Zhou_Resume.pdf": "/static/media/Jacqueline_Zhou_Resume.909ba7c039e369cd8af3.pdf",
     "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/react.png": "/static/media/react.86c8d9eba03e29814d2a.png",
     "static/media/sass.png": "/static/media/sass.c5da83bb9ff45b84e0e7.png",
@@ -22,10 +23,10 @@
     "static/media/mongodb.png": "/static/media/mongodb.940824112db2f1788f28.png",
     "index.html": "/index.html",
     "main.d5df0d07.css.map": "/static/css/main.d5df0d07.css.map",
-    "main.cf1a76e3.js.map": "/static/js/main.cf1a76e3.js.map"
+    "main.a731e8d5.js.map": "/static/js/main.a731e8d5.js.map"
   },
   "entrypoints": [
     "static/css/main.d5df0d07.css",
-    "static/js/main.cf1a76e3.js"
+    "static/js/main.a731e8d5.js"
   ]
 }
