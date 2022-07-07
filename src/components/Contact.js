@@ -47,8 +47,8 @@ const Contact = () => {
   }
 
   return(
-    <Box id="contact" sx={{ ...flexCenterCol, pb: 7, bgcolor: 'background.default' }}>
-      <Box sx={{ bgcolor: 'primary.main', color: 'white', px: 5, py: 3, position: 'relative', right: { md: '20%', lg: '25%' }, top: 55, display: 'flex', flexDirection: 'column', borderRadius: 1  }}>
+    <Box id="contact" sx={{ ...flexCenterCol, pb: 8, bgcolor: 'background.default' }}>
+      <Box sx={{ bgcolor: 'primary.main', color: 'white', px: { xs: 3, sm: 5 }, py: { xs: 1.5, sm: 3}, position: 'relative', right: { md: '20%', lg: '25%' }, top: 55, display: 'flex', flexDirection: 'column', borderRadius: 1  }}>
 
         {/* Headline */}
         <Typography variant={'h4'}>
@@ -56,14 +56,14 @@ const Contact = () => {
         </Typography>
 
         {/* Subtitle */}
-        <Typography variant="body1" sx={{ display: { xs: 'none', md: 'inline' }}} >
+        <Typography variant="body1" sx={{ display: { xs: 'none', sm: 'inline' }}} >
           Interested in chatting? My inbox is open for you!
         </Typography>
 
       </Box>
       
-      <Paper component='form' onSubmit={handleSubmit} sx={{ width: '75%', maxWidth: '1500px', m: 2, pt: 4, textAlign: 'center' }}>
-        <Grid container spacing={1} sx={{ width: '100%', p: 5 }}>
+      <Paper component='form' onSubmit={handleSubmit} sx={{ width: { xs: '85%', md: '75%' }, maxWidth: '1500px', m: 2, pt: 4, textAlign: 'center' }}>
+        <Grid container spacing={1} sx={{ width: '100%', p: { xs: 3, md: 5} }}>
 
           {/* Description */}
           <Grid item xs={12}>
