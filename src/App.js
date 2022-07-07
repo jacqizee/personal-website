@@ -28,15 +28,9 @@ const App = () => {
         <About />
         <Interests />
         <Skills />
-        <Experience />
         <Portfolio />
+        <Experience />
         <Contact />
-        {/* <Routes>
-          <Route path='/#about' element={<About />} />
-          <Route path='/#experience' element={<Experience />} />
-          <Route path='/#portfolio' element={<Portfolio />} />
-          <Route path='/#contact' element={<Contact />} />
-        </Routes> */}
       </BrowserRouter>
     </ThemeProvider>
   )
