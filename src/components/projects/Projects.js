@@ -12,9 +12,9 @@ import Typography from '@mui/material/Typography'
 
 const Projects = () => {
   return(
-    <Box id='projects' sx={{ ...sectionStyling, pb: 1 }}>
+    <Box id='projects' sx={{ ...sectionStyling }}>
       {/* Headline */}
-      <Typography variant="h4" sx={{ ...headlineStyling }}>
+      <Typography variant="h4" sx={{ ...headlineStyling, mb: 0, width: '100vw', textAlign: 'center' }}>
         Projects
       </Typography>
 

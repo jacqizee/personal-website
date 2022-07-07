@@ -7,7 +7,7 @@ import { sectionStyling, paragraphStyling, headlineStyling, cardStyling } from '
 
 const Interests = () => {
   return (
-    <Box id="interests" sx={{ ...sectionStyling, bgcolor: 'rgba(0,144,216,0.2)' }}>
+    <Box id="interests" sx={{ ...sectionStyling }}>
       {/* Interests */}
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
@@ -15,7 +15,7 @@ const Interests = () => {
       </Typography>
       
       {/* Body */}
-      <Box sx={{ ...cardStyling, display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+      <Box sx={{ ...cardStyling, display: 'flex', alignItems: 'center', flexDirection: 'column', bgcolor: 'rgba(0,144,216,0.25)'}}>
         <Typography variant='body1' sx={ paragraphStyling }>
           When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
         </Typography>

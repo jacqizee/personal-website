@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { experienceItems } from './ExperienceItems'
 
 // Styling
-import { sectionStyling, headlineStyling, cardStyling } from '../styles/styles'
+import { sectionStyling, cardStyling } from '../styles/styles'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -35,11 +35,15 @@ const Experience = () => {
     <Box id='experience' sx={{ ...sectionStyling }}>
 
       {/* Headline */}
-      <Typography variant="h4" sx={ headlineStyling }>
-        Experience
-      </Typography>
+      <Box sx={{ ml: { xs: '15%', md: '25%'}, textAlign: 'left', width: '100%', mb: 1 }}>
+        <Typography variant="h4" sx={{ color: 'primary.dark', fontWeight: 'light' }}>
+          Experience
+        </Typography>
+      </Box>
 
       <Box color='primary' sx={{ ...cardStyling, display: 'flex', width: { xs: '90%', md: '80%' } }}>
+
+        {/* Tab Menu */}
         <Tabs
           orientation="vertical"
           value={currentTab}
@@ -49,12 +53,14 @@ const Experience = () => {
         >
           { experienceItems.map((item, index) => <Tab label={item.title} id={index} key={index} />)}
         </Tabs>
-        <Box sx={{ width: '75%' }}>
+
+        {/* Tab Content */}
+        <Box sx={{ width: { xs: '100%', md: '75%'} }}>
           { experienceItems.map((item, index) => {
             return (
               <TabPanel value={currentTab} index={index} key={index}>
-                <Typography variant='subtitle1' sx={{ color: 'primary.dark', display: 'inline' }}>{item.title}</Typography>
-                <Typography variant='subtitle1' sx={{ display: 'inline', color: 'primary.light' }}> @ {item.company}</Typography>
+                <Typography variant='subtitle1' sx={{ color: 'primary.main', display: 'inline' }}>{item.title}</Typography>
+                <Typography variant='subtitle1' sx={{  color: 'primary.main', display: 'inline' }}> @ {item.company}</Typography>
                 <Typography variant='subtitle2'>{item.dates}</Typography>
                 {item.points.map((point, index) => (
                   <Box key={index} sx={{ mt: .5, ml: 2, display: 'flex' }}>

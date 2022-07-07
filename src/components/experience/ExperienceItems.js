@@ -28,7 +28,7 @@ export const experienceItems = [
   },
   {
     title: 'Laboratory Assistant',
-    company: 'State University of NY at Geneseo',
+    company: 'SUNY at Geneseo',
     dates: 'Jan 2019 - May 2019',
     points: [
       '',
@@ -36,7 +36,7 @@ export const experienceItems = [
   },
   {
     title: 'Research Assistant',
-    company: 'State University of NY at Geneseo',
+    company: 'SUNY at Geneseo',
     dates: 'Aug 2018 - May 2019',
     points: [
       '',
