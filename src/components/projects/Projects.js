@@ -3,14 +3,14 @@
 import { flexCenterCol, headlineStyling } from '../styles/styles'
 
 // Components
-import { PortfolioCardRight, PortfolioCardLeft } from './PortfolioCard'
-import { portfolioItems } from './PortfolioItems'
+import { PortfolioCardRight, PortfolioCardLeft } from './ProjectCard'
+import { portfolioItems } from './ProjectItems'
 
 // MUI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-const Portfolio = () => {
+const Projects = () => {
   return(
     <Box id='projects' sx={{ ...flexCenterCol, backgroundColor: 'background.default' }}>
       {/* Headline */}
@@ -30,4 +30,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects

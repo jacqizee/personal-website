@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography'
 import Link from '@mui/material/Link'
 import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
+import Tooltip from '@mui/material/Tooltip'
 
 export const PortfolioCardRight = ({ portfolioItem }) => {
   return (
@@ -98,7 +99,13 @@ const PortfolioInfo = ({ portfolioItem }) => {
 
       {/* Skill Logos */}
       <Box sx={{ m: 1, mt: 1.5 }}>
-        {portfolioItem.tech.map(logo => <Box component='img' key={logo.name} src={logo.src} alt={logo.name} sx={{ height: '1.5rem', mx: .75 }} />)}
+        {portfolioItem.tech.map(logo => {
+          return (
+            <Tooltip title={logo.name} placement="bottom">
+              <Box component='img' key={logo.name} src={logo.src} alt={logo.name} sx={{ height: '1.5rem', mx: .75 }} />
+            </Tooltip>
+          )
+        })}
       </Box>
     </>
   )
