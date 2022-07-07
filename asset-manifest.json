@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5df0d07.css",
-    "main.js": "/static/js/main.114a2737.js",
+    "main.js": "/static/js/main.9d3ac159.js",
     "static/media/Plantpedia.png": "/static/media/Plantpedia.aafce49e96010a981abc.png",
     "static/media/Lofi-Tetris.png": "/static/media/Lofi-Tetris.2ef85684c39a671d7a27.png",
     "static/media/BetterCred.png": "/static/media/BetterCred.64e5ba6774a898930d62.png",
@@ -23,10 +23,10 @@
     "static/media/mongodb.png": "/static/media/mongodb.940824112db2f1788f28.png",
     "index.html": "/index.html",
     "main.d5df0d07.css.map": "/static/css/main.d5df0d07.css.map",
-    "main.114a2737.js.map": "/static/js/main.114a2737.js.map"
+    "main.9d3ac159.js.map": "/static/js/main.9d3ac159.js.map"
   },
   "entrypoints": [
     "static/css/main.d5df0d07.css",
-    "static/js/main.114a2737.js"
+    "static/js/main.9d3ac159.js"
   ]
 }
