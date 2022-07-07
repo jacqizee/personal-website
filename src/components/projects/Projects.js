@@ -12,10 +12,10 @@ import Typography from '@mui/material/Typography'
 
 const Portfolio = () => {
   return(
-    <Box id='portfolio' sx={{ ...flexCenterCol, backgroundColor: 'background.default' }}>
+    <Box id='projects' sx={{ ...flexCenterCol, backgroundColor: 'background.default' }}>
       {/* Headline */}
       <Typography variant="h4" sx={{ ...headlineStyling, mb: 5 }}>
-        Portfolio
+        Projects
       </Typography>
 
       <PortfolioCardRight portfolioItem={portfolioItems[0]} />
