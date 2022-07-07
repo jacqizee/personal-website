@@ -7,7 +7,7 @@ import { sectionStyling, paragraphStyling, headlineStyling, cardStyling } from '
 
 const Interests = () => {
   return (
-    <Box id="interests" sx={{ ...sectionStyling }}>
+    <Box id="interests" sx={{ ...sectionStyling, bgcolor: 'rgba(0,144,216,0.2)' }}>
       {/* Interests */}
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
