@@ -1,3 +1,6 @@
+import Links from './Links'
+
+// MUI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
@@ -12,6 +15,8 @@ const Hero = () => {
       <Typography variant="h4" color='primary.main' sx={{ fontWeight: 300 }}>
         Software Engineer
       </Typography>
+
+      <Links />
     </Box>
   )
 }

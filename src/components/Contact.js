@@ -87,7 +87,7 @@ const Contact = () => {
           </Grid>
           <Grid item xs={12}>
             { !emailSubmitted ?
-              <Button type='submit' sx={{ mt: 1, mb: -1 }}><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Submit</Button> :
+              <Button type='submit' variant='contained' sx={{ mt: 1, mb: -1, color: 'white', boxShadow: 1 }}><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Submit</Button> :
               ! emailError ? <Button type='submit' disabled><MarkEmailReadRounded fontSize='small' sx={{ mr: .5 }} />Sent!</Button> :
               <Button type='submit'><SendRoundedIcon fontSize='small' sx={{ mr: .5 }} />Error</Button>
             }

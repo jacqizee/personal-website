@@ -23,7 +23,7 @@ export const theme = (mode) => ({
         contrastText: '#fff'
       },
       secondary: {
-        main: '#7b5e57',
+        main: '#0090D8',
         contrastText: '#fff'
       },
       background: {
