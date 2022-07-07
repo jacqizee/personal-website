@@ -13,6 +13,7 @@ export const theme = (mode) => ({
       },
       background: {
         default: '#f9f9f9',
+        defaultDarker: '#f3f3f3',
         paper: '#ffffff',
       },
     } : {
@@ -27,6 +28,7 @@ export const theme = (mode) => ({
       },
       background: {
         default: '#303030',
+        defaultDarker: '#252525',
         paper: '#424242',
       },
     }

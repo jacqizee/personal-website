@@ -3,11 +3,11 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-import { flexCenterCol, paragraphStyling, headlineStyling, cardStyling } from './styles/styles'
+import { sectionStyling, paragraphStyling, headlineStyling, cardStyling } from './styles/styles'
 
 const Interests = () => {
   return (
-    <Box id="interests" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol, mt: -1 }}>
+    <Box id="interests" sx={{ ...sectionStyling }}>
       {/* Interests */}
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
@@ -15,7 +15,7 @@ const Interests = () => {
       </Typography>
       
       {/* Body */}
-      <Box sx={{ ...cardStyling, display: 'flex', alignItems: 'center', flexDirection: 'column', mb: 3 }}>
+      <Box sx={{ ...cardStyling, display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
         <Typography variant='body1' sx={ paragraphStyling }>
           When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
         </Typography>

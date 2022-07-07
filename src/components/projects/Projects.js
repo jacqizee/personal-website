@@ -1,6 +1,6 @@
 
 // Styling
-import { flexCenterCol, headlineStyling } from '../styles/styles'
+import { sectionStyling, headlineStyling } from '../styles/styles'
 
 // Components
 import { ProjectCardRight, ProjectCardLeft } from './ProjectCard'
@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography'
 
 const Projects = () => {
   return(
-    <Box id='projects' sx={{ ...flexCenterCol, backgroundColor: 'background.default' }}>
+    <Box id='projects' sx={{ ...sectionStyling }}>
       {/* Headline */}
       <Typography variant="h4" sx={{ ...headlineStyling, mb: 5 }}>
         Projects

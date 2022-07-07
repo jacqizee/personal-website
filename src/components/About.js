@@ -2,11 +2,11 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling } from './styles/styles'
+import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling, sectionStyling } from './styles/styles'
 
 const About = () => {
   return(
-    <Box id="about" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol, mt: -1 }}>
+    <Box id="about" sx={{ ...sectionStyling, bgcolor: 'background.defaultDarker' }}>
       
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
@@ -14,7 +14,7 @@ const About = () => {
       </Typography>
 
       {/* Body */}
-      <Box sx={{ ...cardStyling, ...flexCenterCol, mb: 3, textAlign: 'center' }}>
+      <Box sx={{ ...cardStyling, ...flexCenterCol, textAlign: 'center' }}>
         <Typography variant='h6' sx={{ mb: 1, color: 'primary.contrastText' }}>
           👋🏻 Hey There!
         </Typography>

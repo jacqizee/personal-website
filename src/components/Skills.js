@@ -1,5 +1,5 @@
 // Styling
-import { headlineStyling, flexCenterCol } from './styles/styles'
+import { headlineStyling, flexCenterCol, sectionStyling } from './styles/styles'
 
 // Logos
 import { skillLogos } from './helpers/icons'
@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography'
 const Skills = () => {
 
   return(
-    <Box sx={{ bgcolor: 'background.default', pb: 3, px: 5, ...flexCenterCol, mt: -1 }}>
+    <Box sx={{ ...sectionStyling, bgcolor: 'background.defaultDarker' }}>
       <Typography variant="h4"
           sx={ headlineStyling }>
           Skills

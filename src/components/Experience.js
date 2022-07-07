@@ -1,6 +1,6 @@
 
 // Styling
-import { flexCenterCol, headlineStyling } from './styles/styles'
+import { sectionStyling, flexCenterCol, headlineStyling } from './styles/styles'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography'
 
 const Experience = () => {
   return(
-    <Box id='experience' sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol, mt: -1 }}>
+    <Box id='experience' sx={{ ...sectionStyling, bgcolor: 'background.defaultDarker' }}>
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
         Experience
