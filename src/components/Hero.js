@@ -5,7 +5,7 @@ import { flexCenterCol } from './styles/styles.js'
 
 const Hero = () => {
   return(
-    <Box id='hero' sx={{ ...flexCenterCol, height: '100vh', bgcolor: 'background.default' }}>
+    <Box id='hero' sx={{ ...flexCenterCol, height: '100vh', bgcolor: 'background.default', mb: 1 }}>
       <Typography variant="h2" className="h1-typed-out" color='primary.light' sx={{ fontWeight: 600, maxWidth: 'fit-content' }}> 
         Jacqueline Zhou
       </Typography>

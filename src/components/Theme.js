@@ -13,6 +13,7 @@ export const theme = (mode) => ({
       },
       background: {
         default: '#f9f9f9',
+        defaultDarker: '#f0f0f0',
         paper: '#ffffff',
       },
     } : {
@@ -27,6 +28,7 @@ export const theme = (mode) => ({
       },
       background: {
         default: '#303030',
+        defaultDarker: '#252525',
         paper: '#424242',
       },
     }
@@ -50,6 +52,18 @@ export const theme = (mode) => ({
     },
     h6: {
       fontSize: '1.6rem',
+    },
+    subtitle1: {
+      fontSize: '1.3rem'
+    },
+    subtitle2: {
+      fontSize: '1.1rem'
+    },
+    body1: {
+      fontSize: '0.98rem'
+    },
+    body2: {
+      fontSize: '0.9rem'
     },
   },
 })

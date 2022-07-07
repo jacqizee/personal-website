@@ -11,6 +11,15 @@ export const flexCenterCol = {
   flexDirection: 'column',
 }
 
+export const sectionStyling = {
+  ...flexCenterCol,
+  width: '100%',
+  mt: -1,
+  pt: 6,
+  pb: 9,
+  bgcolor: 'background.default'
+}
+
 export const cardStyling = {
   width: { xs: '90%', md: '65%'},
   maxWidth: '1500px',

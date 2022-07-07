@@ -1,5 +1,5 @@
 // Styling
-import { headlineStyling, flexCenterCol } from './styles/styles'
+import { headlineStyling, sectionStyling, cardStyling } from './styles/styles'
 
 // Logos
 import { skillLogos } from './helpers/icons'
@@ -11,13 +11,13 @@ import Typography from '@mui/material/Typography'
 const Skills = () => {
 
   return(
-    <Box sx={{ bgcolor: 'background.default', pb: 3, px: 5, ...flexCenterCol, mt: -1 }}>
+    <Box sx={{ ...sectionStyling }}>
       <Typography variant="h4"
           sx={ headlineStyling }>
           Skills
       </Typography>
         
-      <Box sx={{ bgcolor: 'background.paper', boxShadow: 2, borderRadius: 3, p: 2, mx: { xs: 0, md: 3 }, display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', ...cardStyling, width: '85%' }}>
         {skillLogos.map(logo => {
           return (  
             <Box

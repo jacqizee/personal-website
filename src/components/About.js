@@ -1,12 +1,17 @@
+// Files
+import resume from '../assets/Jacqueline_Zhou_Resume.pdf'
+
 // MUI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import Link from '@mui/material/Link'
 
-import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling } from './styles/styles'
+import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling, sectionStyling } from './styles/styles'
 
 const About = () => {
   return(
-    <Box id="about" sx={{ width: '100%', backgroundColor: 'background.default', ...flexCenterCol, mt: -1 }}>
+    <Box id="about" sx={{ ...sectionStyling }}>
       
       {/* Headline */}
       <Typography variant="h4" sx={ headlineStyling }>
@@ -14,7 +19,7 @@ const About = () => {
       </Typography>
 
       {/* Body */}
-      <Box sx={{ ...cardStyling, ...flexCenterCol, mb: 3, textAlign: 'center' }}>
+      <Box sx={{ ...cardStyling, ...flexCenterCol, textAlign: 'center', width: { xs: '90%', md: '75%'}, }}>
         <Typography variant='h6' sx={{ mb: 1, color: 'primary.contrastText' }}>
           👋🏻 Hey There!
         </Typography>
@@ -30,6 +35,8 @@ const About = () => {
         <Typography variant='body1' sx={ paragraphStyling }>
           I love the creative and rewarding nature of coding and am excited to challenge myself 💪🏻 by creating and working on projects I can be proud of!
         </Typography>
+
+        <Button component={Link} href={resume} variant='contained' target='__blank__' sx={{ mt: 1, color: 'white', boxShadow: 0 }}>Resume</Button>
       </Box>
       
     </Box>
