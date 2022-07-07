@@ -1,8 +1,8 @@
 // Images
-import tetris from '../../assets/portfolio/Lofi-Tetris.png'
-import betterCred from '../../assets/portfolio/BetterCred.png'
-import plantpedia from '../../assets/portfolio/Plantpedia.png'
-import recipeFinder from '../../assets/portfolio/RecipeFinder.png'
+import tetris from '../../assets/projects/Lofi-Tetris.png'
+import betterCred from '../../assets/projects/BetterCred.png'
+import plantpedia from '../../assets/projects/Plantpedia.png'
+import recipeFinder from '../../assets/projects/RecipeFinder.png'
 
 // Icons
 import { skillLogos } from '../helpers/icons'

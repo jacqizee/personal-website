@@ -20,7 +20,7 @@ const App = () => {
   const [ mode, setMode ] = useState('light')
 
   return (
-    <ThemeProvider theme={createTheme(theme(mode))} sx={{ bgcolor: 'red' }}>
+    <ThemeProvider theme={createTheme(theme(mode))}>
       <BrowserRouter>
         <Navigation mode={mode} setMode={setMode} />
         <Links />

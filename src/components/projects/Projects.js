@@ -18,13 +18,13 @@ const Projects = () => {
         Projects
       </Typography>
 
-      <ProjectCardRight portfolioItem={projectItems[0]} />
+      <ProjectCardRight projectItems={projectItems[0]} />
       
-      <ProjectCardLeft portfolioItem={projectItems[1]} />
+      <ProjectCardLeft projectItems={projectItems[1]} />
       
-      <ProjectCardRight portfolioItem={projectItems[2]} />
+      <ProjectCardRight projectItems={projectItems[2]} />
 
-      <ProjectCardLeft portfolioItem={projectItems[3]} />
+      <ProjectCardLeft projectItems={projectItems[3]} />
 
     </Box>
   )

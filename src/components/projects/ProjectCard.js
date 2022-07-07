@@ -10,41 +10,41 @@ import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
 import Tooltip from '@mui/material/Tooltip'
 
-export const ProjectCardRight = ({ projectItem }) => {
+export const ProjectCardRight = ({ projectItems }) => {
   return (
     <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: 2 } }}>
-      <ProjectImage projectItem={projectItem} />
+      <ProjectImage projectItems={projectItems} />
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: { md: -3, lg: -10 }, pr: { xs: 3, md: 6 }, pl: { xs: 6, md: 3 } }}>
-        <ProjectInfo projectItem={projectItem} />
+        <ProjectInfo projectItems={projectItems} />
       </Grid>
     </Grid>
   )
 }
 
-export const ProjectCardLeft = ({ projectItem }) => {
+export const ProjectCardLeft = ({ projectItems }) => {
   return (
     <Grid container sx={{ display: 'flex', alignItems: 'center', my: { xs: 0, md: 2 } }}>
       <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', mt: { md: -3, lg: -10 }, pl: { xs: 6, md: 8 }, pr: { xs: 3, md: 0 } }}>
-        <ProjectInfo projectItem={projectItem} />
+        <ProjectInfo projectItems={projectItems} />
       </Grid>
-      <ProjectImage projectItem={projectItem} />
+      <ProjectImage projectItems={projectItems} />
     </Grid>
   )
 }
 
-const ProjectImage = ({ projectItem }) => {
+const ProjectImage = ({ projectItems }) => {
   return (
-    <Grid item component={Link} href={projectItem.deployedLink} target="__blank__"
+    <Grid item component={Link} href={projectItems.deployedLink} target="__blank__"
     md={6} sx={{ textAlign: 'center', display: { xs: 'none', md: 'inline' } }}>
       <Box component='img'
-        src={projectItem.image}
-        alt={`Preview of ${projectItem.name}`}
+        src={projectItems.image}
+        alt={`Preview of ${projectItems.name}`}
         sx={{ width: '85%', boxShadow: 2, borderRadius: 2 }} />
     </Grid>
   )
 }
 
-const ProjectInfo = ({ projectItem }) => {
+const ProjectInfo = ({ projectItems }) => {
   return (
     <>
       {/* Title */}
@@ -58,7 +58,7 @@ const ProjectInfo = ({ projectItem }) => {
           py: 1,
           px: 3 }}
       >
-        {projectItem.name}
+        {projectItems.name}
       </Typography>
 
       {/* Info */}
@@ -67,7 +67,7 @@ const ProjectInfo = ({ projectItem }) => {
         {/* Description */}
         <Box sx={{ height: 'fit-content', pt: 1.5, border: '1px dotted', borderColor: 'primary.contrastText', color: 'primary.contrastText', borderRadius: 1, bgcolor: 'background.paper' }}>
           <Typography variant='body1' sx={{ py: 3, px: 5 }}>
-            {projectItem.description}
+            {projectItems.description}
           </Typography>
         </Box>
 
@@ -78,7 +78,7 @@ const ProjectInfo = ({ projectItem }) => {
             component={Link}
             target="_blank"
             rel="noopener"
-            href={projectItem.gitLink}
+            href={projectItems.gitLink}
             sx={ iconStyling }
           >
             <GitHubIcon />
@@ -89,7 +89,7 @@ const ProjectInfo = ({ projectItem }) => {
             component={Link}
             target="_blank"
             rel="noopener"
-            href={projectItem.deployedLink}
+            href={projectItems.deployedLink}
             sx={ iconStyling }
           >
             <InsertLinkRoundedIcon />
@@ -100,10 +100,10 @@ const ProjectInfo = ({ projectItem }) => {
 
       {/* Skill Logos */}
       <Box sx={{ m: 1, mt: 1.5 }}>
-        {projectItem.tech.map(logo => {
+        {projectItems.tech.map(logo => {
           return (
-            <Tooltip title={logo.name} placement="bottom">
-              <Box component='img' key={logo.name} src={logo.src} alt={logo.name} sx={{ height: '1.5rem', mx: .75 }} />
+            <Tooltip title={logo.name} key={logo.name} placement="bottom">
+              <Box component='img' src={logo.src} alt={logo.name} sx={{ height: '1.5rem', mx: .75 }} />
             </Tooltip>
           )
         })}
