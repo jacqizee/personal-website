@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.d5df0d07.css",
-    "main.js": "/static/js/main.9d3ac159.js",
+    "main.js": "/static/js/main.a11a2262.js",
     "static/media/Plantpedia.png": "/static/media/Plantpedia.aafce49e96010a981abc.png",
     "static/media/Lofi-Tetris.png": "/static/media/Lofi-Tetris.2ef85684c39a671d7a27.png",
     "static/media/BetterCred.png": "/static/media/BetterCred.64e5ba6774a898930d62.png",
+    "static/media/art-preview-3.png": "/static/media/art-preview-3.758851ef5ea22ad7bf47.png",
+    "static/media/art-preview-2.png": "/static/media/art-preview-2.962089e886101b48ac12.png",
+    "static/media/art-preview-1.png": "/static/media/art-preview-1.b472f3b744bd5d1442d6.png",
     "static/media/R.png": "/static/media/R.a05f0d1389387a91a676.png",
     "static/media/postgresql.png": "/static/media/postgresql.5a13e254fb0c5ae14652.png",
     "static/media/RecipeFinder.png": "/static/media/RecipeFinder.8d7858157aa2ebc75a3d.png",
@@ -23,10 +26,10 @@
     "static/media/mongodb.png": "/static/media/mongodb.940824112db2f1788f28.png",
     "index.html": "/index.html",
     "main.d5df0d07.css.map": "/static/css/main.d5df0d07.css.map",
-    "main.9d3ac159.js.map": "/static/js/main.9d3ac159.js.map"
+    "main.a11a2262.js.map": "/static/js/main.a11a2262.js.map"
   },
   "entrypoints": [
     "static/css/main.d5df0d07.css",
-    "static/js/main.9d3ac159.js"
+    "static/js/main.a11a2262.js"
   ]
 }
