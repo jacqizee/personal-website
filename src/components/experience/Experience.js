@@ -32,16 +32,16 @@ const Experience = () => {
   }
 
   return(
-    <Box id='experience' sx={{ ...sectionStyling }}>
+    <Box id='experience' sx={{ ...sectionStyling, width: '100vw' }}>
 
       {/* Headline */}
-      <Box sx={{ ml: { xs: '15%', md: '25%'}, textAlign: 'left', width: '100%', mb: 1 }}>
+      <Box sx={{ pl: { xs: '6%', md: '12%'}, textAlign: 'left', width: '100%', mb: 1 }}>
         <Typography variant="h4" sx={{ color: 'primary.light', fontWeight: 'light' }}>
           Experience
         </Typography>
       </Box>
 
-      <Box color='primary' sx={{ ...cardStyling, display: 'flex', width: { xs: '90%', md: '80%' } }}>
+      <Box color='primary' sx={{ ...cardStyling, display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, width: { xs: '90%', md: '80%' } }}>
 
         {/* Tab Menu */}
         <Tabs
@@ -50,13 +50,25 @@ const Experience = () => {
           variant="scrollable"
           onClick={handleTabChange}
           textColor='secondary'
-          sx={{ borderRight: 1, borderColor: 'divider', width: 'fit-content', color: 'primary.dark' }}
+          sx={{ display: { xs: 'none', sm: 'inline' }, borderRight: 1, borderColor: 'divider', width: 'fit-content', color: 'primary.dark' }}
         >
           { experienceItems.map((item, index) => <Tab label={item.title} id={index} key={index} />)}
         </Tabs>
 
+        {/* Tab Menu */}
+        <Tabs
+          orientation="horizontal"
+          value={currentTab}
+          variant="scrollable"
+          onClick={handleTabChange}
+          textColor='secondary'
+          sx={{ display: { xs: 'inline', sm: 'none' }, borderRight: 1, borderColor: 'divider', width: '100%', color: 'primary.dark', mb: 3, overflow: 'scroll' }}
+        >
+          { experienceItems.map((item, index) => <Tab label={item.title} id={index} key={index} wrapped />)}
+        </Tabs>
+
         {/* Tab Content */}
-        <Box sx={{ width: { xs: '100%', md: '75%'} }}>
+        <Box sx={{ width: { xs: '100%', sm: '75%'} }}>
           { experienceItems.map((item, index) => {
             return (
               <TabPanel value={currentTab} index={index} key={index}>
