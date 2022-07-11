@@ -1,4 +1,4 @@
-# Personal Portfolio - [jacqizee.me](jacqizee.me)
+# Personal Portfolio - [jacqizee.me](https://jacqizee.me/)
 Welcome to the repo for my first portfolio website. :)
 
 ## Technologies Used
