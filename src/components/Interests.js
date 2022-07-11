@@ -20,6 +20,7 @@ const Interests = () => {
       
       {/* Body */}
       <Box sx={{ ...cardStyling, display: 'flex', alignItems: 'center', flexDirection: 'column', bgcolor: 'rgba(0,144,216,0.25)'}}>
+        
         <Typography variant='body1' sx={ paragraphStyling }>
           When I'm away from the computer, I like to spend my time watercolor painting and graphite sketching 👩🏻‍🎨, with my favorite thing to draw at the moment being birds.
         </Typography>
@@ -30,9 +31,8 @@ const Interests = () => {
           <Box component='img' src={art3} alt='art' sx={{ width: { xs: '30%', md: '25%'}, mx: 1 }}/>
         </Box>
         
-
         <Typography variant='body1' sx={ paragraphStyling }>
-          I also love to spend time in the kitchen baking breads 🍞 and cookies, and trying new recipes (have any favorites you'd like to share?) inspired by the places I've traveled 🌎.
+          I also love to spend time in the kitchen baking bread 🍞 and cookies, and trying new recipes (have any favorites you'd like to share?) inspired by the places I've traveled 🌎.
         </Typography>
       </Box>
     </Box>

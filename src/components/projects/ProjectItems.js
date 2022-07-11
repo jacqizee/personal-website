@@ -13,7 +13,7 @@ export const projectItems = [
     gitLink: 'https://github.com/jacqizee/BetterCred',
     deployedLink: 'https://bettercred.herokuapp.com/',
     name: 'BetterCred',
-    description: 'Full-stack web application that allow users to find and save credit cards that suit their lifestyle needs to a digital wallet. Designed a PostgreSQL DB that is consumed by a RESTful API.',
+    description: 'Full-stack web application that allow users to find and save credit cards that suit their lifestyle needs to a digital wallet. Designed a PostgreSQL database that is consumed by a RESTful API.',
     tech: [ skillLogos[0], skillLogos[10], skillLogos[2], skillLogos[1], skillLogos[12], skillLogos[4], skillLogos[6] ],
   },
   {
