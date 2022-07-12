@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
+// Components
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,6 +11,7 @@ import Experience from './components/experience/Experience'
 import Projects from './components/projects/Projects'
 import Contact from './components/Contact'
 
+// Theme
 import { theme } from './components/Theme'
 import { ThemeProvider } from '@mui/material/styles'
 import { createTheme } from '@mui/material/styles'

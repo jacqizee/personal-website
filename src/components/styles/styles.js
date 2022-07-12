@@ -29,7 +29,8 @@ export const cardStyling = {
   px: 2,
   py: 3,
   color: 'primary.contrastText',
-  bgcolor: 'background.paper'
+  bgcolor: 'background.paper',
+  mx: 'auto'
 }
 
 export const paragraphStyling = {
