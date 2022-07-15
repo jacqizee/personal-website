@@ -48,7 +48,7 @@ const Experience = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ maxWidth: '100%' }}>
+      <Box sx={{ width: '100%', maxWidth: '100%' }}>
         <Fade>
           <Box color='primary' sx={{ ...cardStyling, display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, width: { xs: '90%', md: '80%' } }}>
 
@@ -79,7 +79,7 @@ const Experience = () => {
             </Tabs>
 
             {/* Tab Content */}
-            <Box sx={{ width: { xs: '100%', sm: '75%'} }}>
+            <Box sx={{ width: { xs: '100%', sm: '75%' } }}>
               { experienceItems.map((item, index) => {
                 return (
                   <TabPanel value={currentTab} index={index} key={index}>
