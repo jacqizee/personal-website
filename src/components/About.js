@@ -2,6 +2,7 @@ import Fade from 'react-reveal/Fade'
 
 // Files
 import resume from '../assets/Jacqueline_Zhou_Resume.pdf'
+import cv from '../assets/Jacqueline_Zhou_CV.pdf'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -39,9 +40,11 @@ const About = () => {
             I love the creative and rewarding nature of coding and am excited to challenge myself by creating and working on projects I can be proud of! 💪🏻
           </Typography>
         
-          {/* Resume */}
-          <Button component={Link} href={resume} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0 }}>Resume</Button>
-        
+          {/* Resume/CV */}
+          <Box sx={{ display: 'flex' }}>
+            <Button component={Link} href={resume} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0, mx: .5 }}>Resume</Button>
+            <Button component={Link} href={cv} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0, mx: .5 }}>CV</Button>
+          </Box>
         </Box>
       </Fade>
     </Box>

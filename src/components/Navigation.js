@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { HashLink } from 'react-router-hash-link'
 
+// MUI
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -61,7 +62,7 @@ const Navigation = ({ mode, setMode}) => {
           <Toolbar>
             {/* Logo/H1 */}
             <Box sx={{ flexGrow: 1 }}>
-              <Typography variant='h6' component={HashLink} to={'#hero'} sx={{ color: 'primary.main' }}>
+              <Typography variant='h6' component={HashLink} to={'#hero'} sx={{ color: 'primary.main', p: 1, textDecoration: 'none', borderRadius: 3 }}>
                 JZ
               </Typography>
             </Box>
