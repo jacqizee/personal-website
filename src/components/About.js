@@ -41,10 +41,10 @@ const About = () => {
           </Typography>
         
           {/* Resume/CV */}
-          <Box sx={{ display: 'flex' }}>
+          {/* <Box sx={{ display: 'flex' }}>
             <Button component={Link} href={resume} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0, mx: .5 }}>Resume</Button>
             <Button component={Link} href={cv} variant='outlined' target='__blank__' sx={{ mt: 1, color: 'secondary.contrastText', boxShadow: 0, mx: .5 }}>CV</Button>
-          </Box>
+          </Box> */}
         </Box>
       </Fade>
     </Box>
