@@ -1,14 +1,14 @@
 import Fade from 'react-reveal/Fade'
 
 // Files
-import resume from '../assets/Jacqueline_Zhou_Resume.pdf'
-import cv from '../assets/Jacqueline_Zhou_CV.pdf'
+// import resume from '../assets/Jacqueline_Zhou_Resume.pdf'
+// import cv from '../assets/Jacqueline_Zhou_CV.pdf'
 
 // MUI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
-import Link from '@mui/material/Link'
+// import Button from '@mui/material/Button'
+// import Link from '@mui/material/Link'
 
 import { flexCenterCol, headlineStyling, cardStyling, paragraphStyling, sectionStyling } from './styles/styles'
 
