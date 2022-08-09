@@ -10,6 +10,7 @@ import Skills from './components/Skills'
 import Experience from './components/experience/Experience'
 import Projects from './components/projects/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 // Theme
 import { theme } from './components/Theme'
@@ -31,6 +32,7 @@ const App = () => {
         <Experience />
         <Interests />
         <Contact />
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )
